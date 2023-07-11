@@ -1,0 +1,11 @@
+.child{
+    background-size: cover;
+    transition: all 1.1s;
+}
+.parent:hover .child{
+transform: scale(1.1);
+}
+.parent:hover .child2{
+    background-color: rgb(115, 68, 10);
+    transition: all 1.1s;
+}
