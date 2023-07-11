@@ -1,0 +1,39 @@
+[
+    {
+        "name":"Science",
+        "course": 14
+    },
+    {
+        "name":"Humanities",
+        "course": 5
+    },
+    {
+        "name":"Social Sciences",
+        "course": 10
+    },
+    {
+        "name":"Business",
+        "course": 2
+    },
+    {
+        "name":"Arts",
+        "course": 12
+    },
+    {
+        "name":"Engineering",
+        "course": 10
+    },
+    {
+        "name":"Communication",
+        "course": 2
+    },
+    {
+        "name":"Health and Fitness",
+        "course": 1
+    },
+    {
+        "name":"Computer Science",
+        "course": 7
+    }
+
+]

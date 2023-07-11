@@ -1,0 +1,16 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.cusShopBackImg {
+    background-image: url(./../../../assets/shop.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+
+}
+
+.cusbor1 {
+    border: 1px solid red;
+
+}
