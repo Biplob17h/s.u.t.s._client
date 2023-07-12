@@ -1,5 +1,6 @@
 import {  RouterProvider } from "react-router-dom";
 import { routes } from "./routes/routes";
+import './pages/Shared/css/style.css'
 
 function App() {
   return (
