@@ -26,7 +26,7 @@ const BlogForm = () => {
         toast.error(data?.message);
       } else {
         toast.success("Product Created Successfully");
-        navigate("/blog");
+        navigate("/");
       }
     } catch (error) {
       console.log(error);
