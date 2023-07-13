@@ -1,0 +1,162 @@
+@media (max-width:480px) {
+    .res-teacherdetailsbanner{
+        flex-direction: column;
+    }
+    .res-teacherdetails{
+        flex-direction: column;
+    }
+    .res-teacherdetails2{
+        width: 100%;
+        padding:2rem 1rem;
+    }
+    .res-teacherdetails3{
+        width: 100%;
+        padding: 3rem 1rem;
+    }
+    .res-progress{
+        justify-content: space-between;
+    }
+    .res-teacher{
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .res-teacher-card{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 1rem;        
+    }
+    
+}
+@media (min-width:481px) and (max-width:768px) {
+    .res-teacherdetailsbanner{
+        flex-direction: column;
+    }
+    .res-teacherdetails{
+        flex-direction: column;
+    }
+    .res-teacherdetails2{
+        width: 100%;
+        padding:2rem 1rem;
+    }
+    .res-teacherdetails3{
+        width: 100%;
+        padding: 3rem 1rem;
+    }
+    .res-progress{
+        justify-content: space-between;
+    }
+    .res-teacher{
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .res-teacher-card{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 1rem;
+    }
+}
+@media (min-width:769px) and (max-width:1024px) {
+    .res-teacherdetailsbanner{
+        flex-direction: column;
+    }
+    .res-teacherdetails{
+        flex-direction: column;
+    }
+    .res-teacherdetails2{
+        width: 100%;
+        padding:0;
+    }
+    .res-teacherdetails3{
+        width: 100%;
+        padding: 3rem 0;
+    }
+    .res-progress{
+        justify-content: space-between;
+    }
+    .res-teacher{
+        flex-direction: column;
+        padding: 0 1rem 0 0;
+        margin: 3rem 0;
+    }
+    .res-teacher img{
+        padding: 0 3rem 0 0;
+    }
+    .res-signature img{
+        padding: 1rem 5rem 1rem 0;
+    }
+    .res-teacher-card{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        padding: 1rem;
+    }
+}
+@media (min-width:1025px) and (max-width:1200px) {
+    .res-teacherdetailsbanner{
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 2rem;
+    }
+    .res-teacherdetails{
+        flex-direction: column;
+    }
+    .res-teacherdetails2{
+        width: 100%;
+        padding:3rem 6rem 3rem 2rem;
+    }
+    .res-teacherdetails3{
+        width: 100%;
+        padding: 3rem 2rem 3rem 2rem;
+    }
+    .res-progress{
+        justify-content: space-between;
+    }
+    .res-teacher{
+        flex-direction: row;
+        margin: 3rem 0;
+    }
+    .res-teacher img{
+        width: 50%;
+        padding: 2rem;
+    }
+    .res-signature{
+        width: 50%;
+    }
+    .res-teacher-card{
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+    }
+}
+@media (min-width:1201px) {
+    .res-teacherdetailsbanner{
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 2rem;
+    }
+    .res-teacherdetails{
+        flex-direction: row;
+    }
+    .res-teacherdetails2{
+        width: 100%;
+        padding:2rem 2rem;
+    }
+    .res-teacherdetails3{
+        width: 100%;
+        padding: 2rem 2rem;
+    }
+    .res-progress{
+        justify-content: space-between;
+    }
+    .res-teacher{
+        flex-direction: row;
+        margin: 3rem 0;
+    }
+    .res-teacher img{
+        width: 50%;
+        padding: 2rem;
+    }
+    .res-signature{
+        width: 50%;
+    }
+    .res-teacher-card{
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+    }
+}

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import toast from "react-hot-toast";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 
 const Login = () => {
@@ -58,12 +58,12 @@ const Login = () => {
                   required
                 />
                 <label className="label">
-                  <a
+                  <Link
                     href="#"
                     className="label-text-alt link link-hover text-sky-400 my-3"
                   >
                     Register here!
-                  </a>
+                  </Link>
                 </label>
                 <button type="submit" className="btn bg-sky-400 mt-6">
                   Register

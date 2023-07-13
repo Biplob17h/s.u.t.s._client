@@ -15,7 +15,7 @@ const Navbar = () => {
         <Link>Event</Link>
       </li>
       <li className="btn btn-ghost">
-        <Link>Pages</Link>
+        <Link to='/about'>About</Link>
       </li>
       <li className="btn btn-ghost">
         <Link>Shop</Link>
