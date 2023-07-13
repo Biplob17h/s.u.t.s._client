@@ -22,8 +22,8 @@ const ShopBody = () => {
       });
   }, [sort, category, lowest, highest, page]);
   return (
-    <div className="flex pt-24 cusText">
-      <div className="w-8/12 mx-5">
+    <div className="cusText md:flex md:pt-24 ">
+      <div className=" md:mx-5 md:w-8/12">
         <ShopItem
           courses={courses}
           setSort={setSort}
@@ -32,7 +32,7 @@ const ShopBody = () => {
           dataCount={dataCount}
           category={category}></ShopItem>
       </div>
-      <div className="w-4/12 ">
+      <div className="w-full md:w-4/12 ">
         <ShopCategory
           setLowest={setLowest}
           setHighest={setHighest}

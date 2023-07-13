@@ -37,14 +37,14 @@ const ShopItem = ({ courses, setSort, page, setPage, category, dataCount }) => {
 
   return (
     <div>
-      <div className="mt-10 flex justify-between mx-10 ">
-        <h1 className="opacity-60 text-[18px] select-none ">
+      <div className="md:mt-10 md:flex md:justify-between md:mx-10 ">
+        <h1 className=" opacity-60 text-[18px] select-none ">
           Showing {courses.length} of {category === "All" ? 63 : dataCount}{" "}
           results
         </h1>
         <select
           onChange={sortValue}
-          className="w-[200px] text-[17px] select-none-">
+          className="w-full text-[17px] select-none- md:w-[200px]">
           <option className="select-none" value="default">
             Default sorting
           </option>
@@ -59,13 +59,16 @@ const ShopItem = ({ courses, setSort, page, setPage, category, dataCount }) => {
           </option>
         </select>
       </div>
-      <div className="grid mt-7 gap-10 grid-cols-3 ">
+      <div className="grid grid-cols-1 w-[200px] mx-auto md:w-full   md:mt-7 md:gap-10 md:grid-cols-3 ">
         {courses?.map((course) => (
           <ShopSingleItem key={course._id} course={course}></ShopSingleItem>
         ))}
       </div>
       <div>
-        <div className={`${category !== "All" ? 'hidden' :''} join flex flex-row justify-end mt-5`}>
+        <div
+          className={`${
+            category !== "All" ? "hidden" : ""
+          } join flex flex-row  mt-5 justify-center md:justify-end`}>
           {buttons.map((button) => (
             <button
               onClick={() => {
