@@ -28,7 +28,7 @@ const Navbar = () => {
     <div
       className={`${
         top ? "opacity-100 md:opacity-10 md:hover:opacity-50" : ""
-      } fixed top-0 w-[320px] md:w-[1280px] z-10`}>
+      } fixed top-0 w-[384px] md:w-[1280px] z-10`}>
       <div className="navbar bg-base-100 justify-between">
         {/* for small device */}
         <div className="flex opacity-100 md:hidden z-10">
