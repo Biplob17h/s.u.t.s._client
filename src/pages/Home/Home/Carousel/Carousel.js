@@ -1,17 +1,102 @@
-import React from 'react';
-import img from '../../../../assets/carousel/front-university.jpg'
-import logo from '../../../../assets/logo.png'
-import './styles.css'
+import React, { useEffect, useState } from "react";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+import logo from "../../../../assets/logo/logo.png";
+
 const Carousel = () => {
-  return (    
-      <header className=' bg-cover w-screen h-screen bg-center relative -z-10' style={{backgroundImage:`url(${img})`}}>
-        <div className='w-full h-full flex flex-col text-white items-center justify-center bg-[rgba(0,0,0,0.5)]'>
-        <img src={logo} alt="" className=''/>
-        <h1 className=' text-6xl text-white'>Graduation Admission</h1>
-        <p className='py-5'>The perfect way to create a stunning online presentation</p>
-        <button className="btn glass rounded-none text-white hover:text-black text-xs">Read More</button>
+  const [carousels, setCarousels] = useState([]);
+
+  useEffect(() => {
+    fetch("carousel.json")
+      .then((res) => res.json())
+      .then((data) => setCarousels(data));
+  }, []);
+  const settings = {
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 1500,
+    autoplaySpeed: 4000,
+    pauseOnHover: false,
+  };
+  return (
+    <div className="h-[100vh]">
+      <Slider {...settings}>
+        <div className="relative block text-white cusCarouselMotion">
+          <img className="absolute top-[24%] left-[42%]" src={logo} alt="" />
+          <h1 className="absolute top-[50%] left-[17%] text-[60px] font-bold">
+            Wellcome To Your Dream Path
+          </h1>
+          <h1 className="text-white top-[64%] left-[28%] font-semibold absolute text-[24px]">
+            Stanford University of Technology and Science
+          </h1>
+          <img
+            className="w-full h-[100vh] "
+            src="https://i.postimg.cc/HLmv575Q/h3-slide-1.jpg"
+            alt=""
+          />
         </div>
-      </header>    
+        <div className="relative block text-white cusCarouselMotion">
+          <img className="absolute top-[24%] left-[42%]" src={logo} alt="" />
+          <h1 className="absolute top-[50%] left-[27%] text-[60px] font-bold">
+            A Unique Experience
+          </h1>
+          <h1 className="text-white top-[64%] left-[34%] font-semibold absolute text-[24px]">
+            Enjoy Every Moment In Your Life
+          </h1>
+          <img
+            className="w-full h-[100vh] "
+            src="https://i.postimg.cc/Z5N7QL4k/h3-slide-2.jpg"
+            alt=""
+          />
+        </div>
+        <div className="relative block text-white cusCarouselMotion">
+          <img className="absolute top-[24%] left-[42%]" src={logo} alt="" />
+          <h1 className="absolute top-[50%] left-[23%] text-[60px] font-bold">
+            Advanced Teaching Method
+          </h1>
+          <h1 className="text-white top-[64%] left-[35%] font-semibold absolute text-[24px]">
+            Learn from the best with best equipment
+          </h1>
+          <img
+            className="w-full h-[100vh] "
+            src="https://i.postimg.cc/DfGz2BLj/Classroom.jpg"
+            alt=""
+          />
+        </div>
+        <div className="relative block text-white cusCarouselMotion">
+          <img className="absolute top-[24%] left-[42%]" src={logo} alt="" />
+          <h1 className="absolute top-[50%] left-[27%] text-[60px] font-bold">
+            Build Career In Sports
+          </h1>
+          <h1 className="text-white top-[64%] left-[40%] font-semibold absolute text-[24px]">
+            Make your career in sports
+          </h1>
+          <img
+            className="w-full h-[100vh] "
+            src="https://www.sport.ox.ac.uk/sites/default/files/styles/listing_tile_text_rollover_image/public/sport/images/media/lacrosse_2.jpg?itok=Q9b4OISw"
+            alt=""
+          />
+        </div>
+        <div className="relative block text-white cusCarouselMotion">
+          <img className="absolute top-[24%] left-[42%]" src={logo} alt="" />
+          <h1 className="absolute top-[50%] left-[26%] text-[60px] font-bold">
+            Premium Scholarship
+          </h1>
+          <h1 className="text-white top-[64%] left-[28%] font-semibold absolute text-[24px]">
+            Prepare for your Advanced Studies in scholarship
+          </h1>
+          <img
+            className="w-full h-[100vh] "
+            src="https://i.postimg.cc/YCX6bGmc/h3-slide-5.jpg"
+            alt=""
+          />
+        </div>
+      </Slider>
+    </div>
   );
 };
 

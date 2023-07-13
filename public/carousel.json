@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "Wellcome To Your Dream Path",
+    "subTitle": "Stanford University of Technology and Science",
+    "img": "https://i.postimg.cc/HLmv575Q/h3-slide-1.jpg"
+  },
+  {
+    "id": 2,
+    "title": "A Unique Experience",
+    "subTitle": "Enjoy Every Moment In Your Life",
+    "img": "https://i.postimg.cc/Z5N7QL4k/h3-slide-2.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Latest Advancements",
+    "subTitle": "Go forward and make your dream true",
+    "img": "https://i.postimg.cc/HLmv575Q/h3-slide-1.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Build Career In Sports",
+    "subTitle": "Make your career in sports",
+    "img": "https://www.sport.ox.ac.uk/sites/default/files/styles/listing_tile_text_rollover_image/public/sport/images/media/lacrosse_2.jpg?itok=Q9b4OISw"
+  },
+  {
+    "id": 5,
+    "title": "Premium Scholarship",
+    "subTitle": "Prepare for your Advanced Studies in scholarship",
+    "img": "https://i.postimg.cc/YCX6bGmc/h3-slide-5.jpg"
+  }
+]
