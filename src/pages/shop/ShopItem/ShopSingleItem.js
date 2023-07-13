@@ -3,7 +3,6 @@ import React, { useState } from "react";
 
 const ShopSingleItem = ({ course }) => {
   const [hover, setHover] = useState(false);
-  console.log(course)
   const { img, name, price } = course;
   return (
     <div>

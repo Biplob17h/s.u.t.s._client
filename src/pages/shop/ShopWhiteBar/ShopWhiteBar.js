@@ -3,15 +3,15 @@ import { Link } from "react-router-dom";
 
 const ShopWhiteBar = () => {
   return (
-    <div className="h-[200px] cusShopBackImg px-20 ">
-      <div className="flex items-center pt-[80px] justify-between">
-        <h1 className="text-5xl font-bold ">Shop</h1>
+    <div className="px-10 pt-10 h-[200px] cusShopBackImg md:px-20 ">
+      <div className="md:flex md:items-center md:pt-[80px] md:justify-between">
+        <h1 className="text-3xl font-bold md:text-5xl">Courses</h1>
         <div className="flex">
-          <Link to="/" className="text-[17px]">
+          <Link to="/" className=" md:text-[17px]">
             Home
           </Link>
-          <span className="mx-1 text-[17px]">/</span>
-          <h1 className="text-[17px]">Shop</h1>
+          <span className="mx-1 md:text-[17px]">/</span>
+          <h1 className="text-[17px]">course</h1>
         </div>
       </div>
     </div>

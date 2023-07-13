@@ -1,39 +1,53 @@
 [
     {
-        "name":"Science",
-        "course": 14
+        "id":1,
+        "name":"All",
+        "course": 63
     },
     {
-        "name":"Humanities",
-        "course": 5
+      "id": 2,
+      "name": "Science",
+      "course": 14
     },
     {
-        "name":"Social Sciences",
-        "course": 10
+      "id": 3,
+      "name": "Computer Science" ,
+      "course": 5
     },
     {
-        "name":"Business",
-        "course": 2
+      "id": 4,
+      "name": "Social Sciences",
+      "course": 10
     },
     {
-        "name":"Arts",
-        "course": 12
+      "id": 5,
+      "name": "Engineering" ,
+      "course": 2
     },
     {
-        "name":"Engineering",
-        "course": 10
+      "id": 6,
+      "name": "Humanities",
+      "course": 12
     },
     {
-        "name":"Communication",
-        "course": 2
+      "id": 7,
+      "name": "Communication",
+      "course": 10
     },
     {
-        "name":"Health and Fitness",
-        "course": 1
+      "id": 8,
+      "name": "Arts",
+      "course": 2
     },
     {
-        "name":"Computer Science",
-        "course": 7
+      "id": 9,
+      "name": "Business",
+      "course": 1
+    },
+    {
+      "id": 10,
+      "name": "Health and Fitness",
+      "course": 7
     }
 
 ]
