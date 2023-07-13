@@ -31,10 +31,10 @@ const Carousel = () => {
             src={logo}
             alt=""
           />
-          <h1 className="absolute top-[50%] left-[17%]  font-bold text-[27px] md:text-[60px]">
+          <h1 className="absolute top-[50%] left-[17%]  font-bold text-[27px] md:text-[60px] md:left-[19%]">
             Wellcome To Your Dream Path
           </h1>
-          <h1 className="text-white top-[64%] left-2 absolute text-[18px]  md:only:text-[24px] md:font-semibold md:left-[28%]">
+          <h1 className="text-white top-[64%] left-2 absolute text-[18px]  md:text-[28px] md:font-semibold md:left-[28%]">
             Stanford University of Technology and Science
           </h1>
           <img
@@ -49,10 +49,10 @@ const Carousel = () => {
             src={logo}
             alt=""
           />
-          <h1 className="absolute top-[50%] left-[17%]  font-bold text-[27px] md:text-[60px]">
+          <h1 className="absolute top-[50%] left-[17%]  font-bold text-[27px] md:text-[60px] md:left-[27%] ">
             A Unique Experience
           </h1>
-          <h1 className="text-white top-[58%] left-[66px] absolute text-[18px]  md:only:text-[24px] md:font-semibold md:left-[28%]">
+          <h1 className="text-white top-[58%] left-[66px] absolute text-[18px]  md:text-[28px] md:font-semibold md:left-[34%] md:top-[62%]">
             Enjoy Every Moment In Your Life
           </h1>
           <img
@@ -66,7 +66,7 @@ const Carousel = () => {
           <h1 className="absolute top-[50%] left-[17%]  font-bold text-[27px] md:text-[60px]">
             Advanced Teaching Method
           </h1>
-          <h1 className="text-white top-[64%] left-[30px] absolute text-[18px]  md:only:text-[24px] md:font-semibold md:left-[28%]">
+          <h1 className="text-white top-[64%] left-[30px] absolute text-[18px]  md:text-[28px] md:font-semibold md:left-[28%]">
             Learn from the best with best equipment
           </h1>
           <img
@@ -77,10 +77,10 @@ const Carousel = () => {
         </div>
         <div className="relative block text-white cusCarouselMotion">
           <img className="absolute top-[24%] left-[42%]" src={logo} alt="" />
-          <h1 className="absolute top-[50%] left-[17%]  font-bold text-[27px] md:text-[60px]">
+          <h1 className="absolute top-[50%] left-[17%]  font-bold text-[27px] md:text-[60px] md:left-[27%]">
             Build Career In Sports
           </h1>
-          <h1 className="text-white top-[58%] left-[85px] absolute text-[18px]  md:only:text-[24px] md:font-semibold md:left-[28%]">
+          <h1 className="text-white top-[58%] left-[85px] absolute text-[18px]  md:text-[28px] md:font-semibold md:left-[39%] md:top-[62%]">
             Make your career in sports
           </h1>
           <img
@@ -91,10 +91,10 @@ const Carousel = () => {
         </div>
         <div className="relative block text-white cusCarouselMotion">
           <img className="absolute top-[24%] left-[42%]" src={logo} alt="" />
-          <h1 className="absolute top-[50%] left-[17%]  font-bold text-[27px] md:text-[60px]">
+          <h1 className="absolute top-[50%] left-[17%]  font-bold text-[27px] md:text-[60px] md:left-[29%]">
             Premium Scholarship
           </h1>
-          <h1 className="text-white top-[58%] left-12 absolute text-[18px]  md:only:text-[24px] md:font-semibold md:left-[28%]">
+          <h1 className="text-white top-[58%] left-12 absolute text-[18px]  md:text-[28px] md:font-semibold md:left-[28%] md:top-[62%]">
             Prepare for your Advanced Studies in scholarship
           </h1>
           <img
