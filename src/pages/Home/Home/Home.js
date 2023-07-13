@@ -8,7 +8,7 @@ import PopularCourses from './PopularCourses/PopularCourses';
 
 const Home = () => {
     return (
-        <div>
+        <div className=''>
             <Carousel></Carousel>
             <WelcomePart></WelcomePart>
             <Events></Events>

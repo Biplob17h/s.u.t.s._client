@@ -2,7 +2,7 @@ import React from "react";
 
 const WelcomePart = () => {
   return (    
-      <div className="hero min-h-screen">
+      <div className="hero min-h-screen -z-50">
         <div className="hero-content flex-col lg:flex-row">
           <img
             src="https://img.freepik.com/free-photo/free-time-students-bachelor-s-campus-life-rhythm-five-friendly-students-are-walking_8353-6408.jpg"

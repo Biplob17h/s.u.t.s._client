@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { toast } from "react-hot-toast";
+import { Link } from "react-router-dom";
 
 const Blog = () => {
   const [blogs, setBlogs] = useState([]);
@@ -53,8 +54,7 @@ const Blog = () => {
                           viewBox="0 0 24 24"
                           stroke-width="1.5"
                           stroke="currentColor"
-                          class="w-6 h-6"
-                        >
+                          class="w-6 h-6">
                           <path
                             stroke-linecap="round"
                             stroke-linejoin="round"
@@ -69,8 +69,7 @@ const Blog = () => {
                           viewBox="0 0 24 24"
                           strokeWidth={1.5}
                           stroke="currentColor"
-                          className="w-6 h-6"
-                        >
+                          className="w-6 h-6">
                           <path
                             strokeLinecap="round"
                             strokeLinejoin="round"
@@ -85,8 +84,7 @@ const Blog = () => {
                           viewBox="0 0 24 24"
                           strokeWidth={1.5}
                           stroke="currentColor"
-                          className="w-6 h-6"
-                        >
+                          className="w-6 h-6">
                           <path
                             strokeLinecap="round"
                             strokeLinejoin="round"
@@ -127,9 +125,11 @@ const Blog = () => {
                   Create a unique and beautiful blog easily.
                 </div>
                 <div>
-                  <button className="btn  btn-warning mt-3">
-                    CREATE YOUR BLOG
-                  </button>
+                  <Link to="/blog-form">
+                    <button className="btn  btn-warning mt-3">
+                      CREATE YOUR BLOG
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>
