@@ -33,6 +33,7 @@ const Register = () => {
 
   return (
     <>
+    <button className="text-4xl btn btn-ghost pt-20" onClick={()=>window.register.showModal()}>Register</button>
       <dialog
         id="register"
         className="modal  transition delay-300 duration-500"
