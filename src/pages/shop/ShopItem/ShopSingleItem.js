@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-
+import { Link } from "react-router-dom";
 
 const ShopSingleItem = ({ course }) => {
   const [hover, setHover] = useState(false);
-  const { img, name, price } = course;
+  const { img, name, price, _id } = course;
+  
   return (
-    <div>
+    <Link onClick={()=>{window.scrollTo(0,0)}} to={`/course/single/${_id}`}>
       <div
         onMouseEnter={() => {
           setHover(true);
@@ -15,7 +16,7 @@ const ShopSingleItem = ({ course }) => {
         }}
         className=" border relative bg-slate-100 ">
         <img className="h-[230px] p-4 bg-transparent  " src={img} alt="" />
-        <div
+        {/* <div
           className={`${
             hover
               ? " h-[50px] absolute bottom-0 w-full duration-300 ease-in hover:bg-[#434343] cursor-pointer"
@@ -24,7 +25,7 @@ const ShopSingleItem = ({ course }) => {
           <span className="absolute bottom-[14px] start-16 font-bold text-white text-[17px] ">
             ADD TO CART
           </span>
-        </div>
+        </div> */}
       </div>
       <div className="mt-7">
         <h1 className="text-[21px] font-semibold opacity-80 text-center">
@@ -34,7 +35,7 @@ const ShopSingleItem = ({ course }) => {
           {price}$
         </h1>
       </div>
-    </div>
+    </Link>
   );
 };
 

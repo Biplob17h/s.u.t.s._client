@@ -15,7 +15,7 @@ const PopularCourses = () => {
         aliquet. Aenean sollicitudinlorem quis bibendum auci elit consequat
         ipsutis sem nibh id elitduis sed
       </p>
-      <div className="grid grid-cols-4 gap-6">
+      <div className="flex flex-row md:flex-wrap sm:flex-wrap gap-6">
         <div className="card rounded-none border border-slate-200 w-[302px] h-[434px]  relative parent bg-base-100">
           <figure className="">
             <img src={img1} alt="Shoes" className="child" />

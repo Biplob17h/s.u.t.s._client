@@ -1,9 +1,12 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import axios from "axios";
 import toast from "react-hot-toast";
 import { Link, useNavigate } from "react-router-dom";
+import { AuthContext } from "../../contextApi/UserContext";
 
 const Login = () => {
+  // context api
+  const { setUser } = useContext(AuthContext);
   //all State
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -20,6 +23,9 @@ const Login = () => {
       if (res.data.success) {
         toast.success(res.data.message);
         console.log("Done Login");
+        localStorage.setItem("email", email);
+        setUser(email);
+        setUser(email);
         navigate("/");
       } else {
         toast.error(res.data.message);
