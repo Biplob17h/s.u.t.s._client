@@ -1,10 +1,12 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import axios from "axios";
 import toast from "react-hot-toast";
-import { Link, useNavigate } from "react-router-dom";
-
+import { useNavigate } from "react-router-dom";
+import { AuthContext } from "../../contextApi/UserContext";
 
 const Login = () => {
+  // context api
+  const { setUser } = useContext(AuthContext);
   //all State
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -21,6 +23,7 @@ const Login = () => {
       if (res.data.success) {
         toast.success(res.data.message);
         console.log("Done Login");
+        setUser(email);
         navigate("/");
       } else {
         toast.error(res.data.message);
@@ -58,12 +61,11 @@ const Login = () => {
                   required
                 />
                 <label className="label">
-                  <Link
+                  <a
                     href="#"
-                    className="label-text-alt link link-hover text-sky-400 my-3"
-                  >
+                    className="label-text-alt link link-hover text-sky-400 my-3">
                     Register here!
-                  </Link>
+                  </a>
                 </label>
                 <button type="submit" className="btn bg-sky-400 mt-6">
                   Register

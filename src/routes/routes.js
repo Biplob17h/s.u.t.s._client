@@ -2,11 +2,12 @@ import { createBrowserRouter } from "react-router-dom";
 import Main from "../layout/Main";
 import Home from "../pages/Home/Home/Home";
 import Shop from "../pages/shop/Shop";
-import About from "../pages/About/About/About";
-import TeacherDetails from "../pages/About/TeacherDetails/TeacherDetails";
-import Blog from "../pages/Blog/blogPage";
-import BlogForm from "../pages/Blog/blogForm"
+
 import Register from "../pages/Authentication/Register/Register";
+import CourseSingle from "../pages/Shared/CourseSingle/CourseSingle";
+import Login from "../pages/Authentication/Login/Login";
+import Blog from "../pages/Shared/Navbar/Blog/blogPage";
+import BlogForm from "../pages/Shared/Navbar/Blog/blogForm";
 
 export const routes = createBrowserRouter([
   {
@@ -22,26 +23,27 @@ export const routes = createBrowserRouter([
         element: <Shop></Shop>,
       },
       {
-        path:'/about',
-        element:<About></About>
-      },
-      {
-        path:'/teacherdetails',
-        element:<TeacherDetails></TeacherDetails>
-        
-      },
-      {
         path: "/blog",
-        element: <Blog></Blog>
+        element: <Blog></Blog>,
       },
       {
         path: "/blog-form",
-        element: <BlogForm></BlogForm>
+        element: <BlogForm></BlogForm>,
       },
       {
-        path : "/register",
-        element : <Register></Register>
-      }
+        path: "/register",
+        element: <Register></Register>,
+      },
+      {
+        path: "/login",
+        element: <Login></Login>,
+      },
+      {
+        path: "/course/single/:id",
+        element: <CourseSingle></CourseSingle>,
+        loader: ({ params }) =>
+          fetch(`http://localhost:8080/api/v1/courses/${params.id}`),
+      },
     ],
   },
 ]);

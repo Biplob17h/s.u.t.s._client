@@ -1,11 +1,14 @@
-import {  RouterProvider } from "react-router-dom";
+import { RouterProvider } from "react-router-dom";
 import { routes } from "./routes/routes";
-import './pages/Shared/css/style.css'
+import "./pages/Shared/css/style.css";
+import UserContext from "./pages/contextApi/UserContext";
 
 function App() {
   return (
     <div className="max-w-sm  overflow-hidden mx-auto lg:max-w-7xl">
-      <RouterProvider router={routes}></RouterProvider>
+      <UserContext>
+        <RouterProvider router={routes}></RouterProvider>
+      </UserContext>
     </div>
   );
 }

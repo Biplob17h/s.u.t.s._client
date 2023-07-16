@@ -92,19 +92,22 @@ const Navbar = () => {
                 <Link to="/">Home</Link>
               </li>
               <li>
-                <Link>Course</Link>
+                <Link to='/shop'>Course</Link>
               </li>
               <li>
-                <Link>Events</Link>
+                <Link to=''>Events</Link>
               </li>
               <li>
                 <Link to="/blog">Blog</Link>
               </li>
               <li>
-                <Link>About Us</Link>
+                <Link to=''>About Us</Link>
               </li>
               <li>
-                <Link>Register</Link>
+                <Link to='/register'>Register</Link>
+              </li>
+              <li>
+                <Link to='/login'>Login</Link>
               </li>
             </ul>
           </div>
@@ -131,6 +134,11 @@ const Navbar = () => {
           <Link to="/register">
             <button className="btn btn-ghost hover:text-[#0693e3]">
               Register
+            </button>
+          </Link>
+          <Link to="/login">
+            <button className="btn btn-ghost hover:text-[#0693e3]">
+              Login
             </button>
           </Link>
           {/* cart svg */}
