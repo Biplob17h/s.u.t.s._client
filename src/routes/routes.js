@@ -4,7 +4,7 @@ import Home from "../pages/Home/Home/Home";
 import Shop from "../pages/shop/Shop";
 import About from "../pages/About/About/About";
 import TeacherDetails from "../pages/About/TeacherDetails/TeacherDetails";
-import Blog from "../pages/Blog/blogPage";
+import Blog from "../pages/Blog/Blog";
 import BlogForm from "../pages/Blog/blogForm"
 import Register from "../pages/Authentication/Register/Register";
 

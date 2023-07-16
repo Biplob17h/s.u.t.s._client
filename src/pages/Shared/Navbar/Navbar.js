@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import logo from "./../../../assets/logo/suts-logo.png";
 import { Link } from "react-router-dom";
+import Register from "../../Authentication/Register/Register";
+import Login from "../../Authentication/Login/Login";
 
 const Navbar = () => {
   const [top, setTop] = useState(true);
@@ -28,20 +30,23 @@ const Navbar = () => {
     <div
       className={`${
         top ? "opacity-100 md:opacity-10 md:hover:opacity-50" : ""
-      } fixed top-0 w-[384px] md:w-[1280px] z-10`}>
+      } fixed top-0 w-[384px] md:w-[1280px] z-10`}
+    >
       <div className="navbar bg-base-100 justify-between">
         {/* for small device */}
         <div className="flex opacity-100 md:hidden z-10">
           <div className="dropdown">
             <label
               tabIndex={0}
-              className="btn btn-ghost btn-circle opacity-100">
+              className="btn btn-ghost btn-circle opacity-100"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
                 fill="none"
                 viewBox="0 0 24 24"
-                stroke="currentColor">
+                stroke="currentColor"
+              >
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -52,7 +57,8 @@ const Navbar = () => {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1]  p-2 shadow bg-base-100 rounded-box w-52">
+              className="menu menu-sm dropdown-content mt-3 z-[1]  p-2 shadow bg-base-100 rounded-box w-52"
+            >
               <li className="flex flex-row justify-between">
                 {/* cart for small  device*/}
                 <button className="btn">
@@ -64,7 +70,8 @@ const Navbar = () => {
                           className="h-5 w-5"
                           fill="none"
                           viewBox="0 0 24 24"
-                          stroke="currentColor">
+                          stroke="currentColor"
+                        >
                           <path
                             strokeLinecap="round"
                             strokeLinejoin="round"
@@ -81,7 +88,8 @@ const Navbar = () => {
                 <button className="btn">
                   <label
                     tabIndex={0}
-                    className="btn btn-ghost btn-circle avatar">
+                    className="btn btn-ghost btn-circle avatar"
+                  >
                     <div className="w-10 rounded-full">
                       <img src="/images/stock/photo-1534528741775-53994a69daeb.jpg" />
                     </div>
@@ -101,7 +109,7 @@ const Navbar = () => {
                 <Link to="/blog">Blog</Link>
               </li>
               <li>
-                <Link>About Us</Link>
+                <Link to="/about">About Us</Link>
               </li>
               <li>
                 <Link>Register</Link>
@@ -110,7 +118,7 @@ const Navbar = () => {
           </div>
         </div>
         {/* for both  device*/}
-        <Link to='/'>
+        <Link to="/">
           <div className="">
             <img className="w-24" src={logo} alt="" />
           </div>
@@ -127,12 +135,25 @@ const Navbar = () => {
           <Link to="/blog" className="btn btn-ghost hover:text-[#0693e3]">
             Blog
           </Link>
-          <Link className="btn btn-ghost hover:text-[#0693e3]">About Us</Link>
-          <Link to="/register">
-            <button className="btn btn-ghost hover:text-[#0693e3]">
-              Register
-            </button>
-          </Link>
+          <Link className="btn btn-ghost hover:text-[#0693e3]" to='/about'>About Us</Link>
+          {/* register */}
+          <button
+            className="btn btn-ghost hover:text-[#0693e3]"
+            onClick={() => window.register.showModal()}
+          >
+            Register
+          </button>
+          <Register></Register>
+          {/* register */}
+          {/* login */}
+          <button
+            className="btn btn-ghost hover:text-[#0693e3]"
+            onClick={() => window.login.showModal()}
+          >
+            Login
+          </button>
+          <Login></Login>
+          {/* login */}
           {/* cart svg */}
           <div className="dropdown dropdown-end md:mr-3">
             <label tabIndex={0} className="btn btn-ghost btn-circle">
@@ -142,7 +163,8 @@ const Navbar = () => {
                   className="h-5 w-5"
                   fill="none"
                   viewBox="0 0 24 24"
-                  stroke="currentColor">
+                  stroke="currentColor"
+                >
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -155,7 +177,8 @@ const Navbar = () => {
             </label>
             <div
               tabIndex={0}
-              className="mt-3 z-[1] card card-compact dropdown-content w-52 bg-base-100 shadow">
+              className="mt-3 z-[1] card card-compact dropdown-content w-52 bg-base-100 shadow"
+            >
               <div className="card-body">
                 <span className="font-bold text-lg">8 Items</span>
                 <span className="text-info">Subtotal: $999</span>
@@ -176,7 +199,8 @@ const Navbar = () => {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            >
               <li>
                 <a className="justify-between">
                   Profile

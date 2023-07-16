@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import toast from "react-hot-toast";
 
@@ -33,56 +33,62 @@ const Register = () => {
 
   return (
     <>
-      <div className="hero min-h-screen">
-        <div className="hero-content flex-col lg:flex-row-reverse">
-          <div className="card flex-shrink-0 w-full max-w-md shadow-2xl bg-base-100">
-            <form onSubmit={handleSubmit}>
-              <div className="card-body">
-                <h1 className="text-5xl">User Registation</h1>
-                <input
-                  type="text"
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
-                  placeholder="User Name"
-                  className="input shadow my-1"
-                  required
-                />
-                <input
-                  type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  placeholder="Email"
-                  className="input shadow my-1"
-                  required
-                />
-                <input
-                  type="password"
-                  placeholder="Password"
-                  value={password}
-                  onChange={(e) => setPassword(e.target.value)}
-                  autoComplete="on"
-                  className="input shadow my-1"
-                  required
-                />
-                <label className="label">
-                  <a
-                    href="#"
-                    className="label-text-alt link link-hover text-sky-400 my-3"
-                  >
-                    Forgot password?
-                  </a>
-                </label>
-                Your personal data will be used to support your experience
-                throughout this website, to manage access to your account, and
-                for other purposes described in our privacy policy.
-                <button type="submit" className="btn bg-sky-400 mt-6">
-                  Register
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
+      <dialog
+        id="register"
+        className="modal  transition delay-300 duration-500"
+      >
+        <form
+          onSubmit={handleSubmit}
+          method="dialog"
+          className="modal-box rounded-none"
+        >
+          <h1 className="text-center text-3xl font-semibold my-3">
+            User Registration
+          </h1>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            placeholder="User Name"
+            className="input input-bordered w-full rounded-none my-2 bg-gray-50 border border-none"
+            required
+          />
+          <input
+            type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            placeholder="Email"
+            className="input input-bordered w-full rounded-none my-2 bg-gray-50 border border-none"
+          />
+          <input
+            type="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            autoComplete="on"
+            placeholder="Password"
+            className="input input-bordered w-full rounded-none my-2 bg-gray-50 border border-none"
+          />
+          <input
+            type="password"
+            placeholder="Confirm Password"
+            className="input input-bordered w-full rounded-none my-2 bg-gray-50 border border-none"
+          />
+          <Link className=" my-2  text-xs hover:text-sky-600">
+            already have an account ?
+          </Link>
+          <p className="my-2 text-sm font-medium">
+            Your personal data will be used to support your experience
+            throughout this website, to manage access to your account, and for
+            other purposes described in our privacy policy.
+          </p>
+          <button type="submit" className="btn bg-sky-600 w-full hover:bg-slate-500 text-white font-semibold rounded-none my-2">
+            REGISTER
+          </button>
+        </form>
+        <form method="dialog" className="modal-backdrop">
+          <button>close</button>
+        </form>
+      </dialog>
     </>
   );
 };
