@@ -23,6 +23,8 @@ const Login = () => {
       if (res.data.success) {
         toast.success(res.data.message);
         console.log("Done Login");
+        localStorage.setItem("email", email);
+        setUser(email);
         setUser(email);
         navigate("/");
       } else {

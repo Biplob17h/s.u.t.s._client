@@ -5,7 +5,7 @@ import { AuthContext } from "../../contextApi/UserContext";
 
 const Navbar = () => {
   // context api
-  const { user, setUser } = useContext(AuthContext);
+    const { user, setUser } = useContext(AuthContext);
 
   // all state
   const [top, setTop] = useState(true);
@@ -16,7 +16,8 @@ const Navbar = () => {
     console.log("clicked");
   };
   const handleLogOut = () => {
-    setUser("");
+    localStorage.setItem('email', '')
+    setUser('')
     console.log("log out successfull");
   };
   const scroll = () => {
@@ -37,6 +38,7 @@ const Navbar = () => {
       window.removeEventListener("scroll", scroll);
     };
   }, [nav]);
+  
   return (
     <div
       className={`${

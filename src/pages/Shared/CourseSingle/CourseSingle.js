@@ -1,7 +1,8 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Link, useLoaderData } from "react-router-dom";
 import StarRatings from "react-star-ratings";
 import { AuthContext } from "../../contextApi/UserContext";
+import { toast } from "react-hot-toast";
 
 const CourseSingle = () => {
   // context api
@@ -11,6 +12,7 @@ const CourseSingle = () => {
 
   // all state
   const [info, setInfo] = useState("description");
+  const [bought, setBought] = useState(false);
 
   // function
   const handleAddToCart = () => {
@@ -29,10 +31,22 @@ const CourseSingle = () => {
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log("success");
-        console.log(data);
+        toast.success("Item add to cart successfully ");
+        setBought();
       });
   };
+
+  useEffect(() => {
+    fetch(`http://localhost:8080/api/v1/order?email=${user}`)
+      .then((res) => res.json())
+      .then((data) => {
+        data.forEach((c) => {
+          if (c?.course?.name === course?.name) {
+            setBought(true);
+          }
+        });
+      });
+  });
 
   return (
     <div className="cusText">
@@ -67,11 +81,22 @@ const CourseSingle = () => {
             {course.price}&#32;$
           </h1>
           <h1 className="text-xl mt-3">{course.description}</h1>
-          <h1
-            onClick={handleAddToCart}
-            className="mt-20 text-[18px] font-semibold cusOpenSans text-white  bg-[#2d76b2] text-center pt-3 cursor-pointer h-[50px] w-[190px] hover:bg-[#434343]">
-            ADD TO CART
-          </h1>
+          {bought ? (
+            <>
+              <h1
+                className="mt-20 text-[18px] font-semibold cusOpenSans text-white text-center pt-3 cursor-no-drop  h-[50px] w-[190px] bg-[#434343]">
+                Bought
+              </h1>
+            </>
+          ) : (
+            <>
+              <h1
+                onClick={handleAddToCart}
+                className="mt-20 text-[18px] font-semibold cusOpenSans text-white  bg-[#2d76b2] text-center pt-3 cursor-pointer h-[50px] w-[190px] hover:bg-[#434343]">
+                ADD TO CART
+              </h1>
+            </>
+          )}
         </div>
       </div>
       {/* more info section */}
