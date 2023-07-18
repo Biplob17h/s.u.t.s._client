@@ -248,16 +248,10 @@ const Navbar = () => {
             </>
           ) : (
             <>
-              <Link to="/register">
-                <button className="btn btn-ghost hover:text-[#0693e3]">
-                  Register
-                </button>
-              </Link>
-              <Link to="/login">
-                <button className="btn btn-ghost hover:text-[#0693e3]">
-                  Login
-                </button>
-              </Link>
+              <button className="btn btn-ghost hover:text-[#0693e3]" onClick={()=>window.register.showModal()}>Register</button>
+              <Register></Register>
+              <button className="btn btn-ghost hover:text-[#0693e3]" onClick={()=>window.login.showModal()}>Login</button>
+              <Login></Login>
             </>
           )}
         </div>

@@ -38,15 +38,7 @@ export const routes = createBrowserRouter([
       {
         path: "/blog-form",
         element: <BlogForm></BlogForm>,
-      },
-      {
-        path: "/register",
-        element: <Register></Register>,
-      },
-      {
-        path: "/login",
-        element: <Login></Login>,
-      },
+      },     
       {
         path: "/course/single/:id",
         element: <CourseSingle></CourseSingle>,
