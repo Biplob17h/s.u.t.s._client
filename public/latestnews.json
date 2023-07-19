@@ -1,0 +1,56 @@
+[
+    {
+        "id": "1",
+        "heading": "New Science Building Inauguration",
+        "title": "State-of-the-Art Science Building Inaugurated at University X",
+        "news": "University X recently celebrated the grand inauguration of its new state-of-the-art science building. The facility is equipped with advanced laboratories, cutting-edge research equipment, and collaborative spaces to foster innovation and scientific discovery.",
+        "image": "https://ichef.bbci.co.uk/news/976/cpsprodpb/7B76/production/_129860613_newparliament3.jpg",
+        "category": "University News",
+        "tags": ["inauguration", "science", "research"]
+    },
+    {
+        "id": "2",
+        "heading": "Scholarship Program Announcement",
+        "title": "University Y Introduces New Scholarship Program for Underprivileged Students",
+        "news": "University Y has launched a new scholarship program aimed at providing financial assistance to underprivileged students. The program aims to support students with exceptional academic potential but limited financial resources, enabling them to pursue higher education and achieve their career goals.",
+        "image": "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/scholarship-program-flyer-design-template-89af41dd405df1b61b3d9a42733af9f4_screen.jpg?ts=1611034289",
+        "category": "University News",
+        "tags": ["scholarship", "education", "students"]
+    },
+    {
+        "id": "3",
+        "heading": "Research Grant Awarded to Professor Z",
+        "title": "Professor Z Receives Prestigious Research Grant for Groundbreaking Study",
+        "news": "Professor Z, a renowned faculty member at University W, has been awarded a prestigious research grant for their groundbreaking study on sustainable energy solutions. The grant will enable Professor Z and their research team to conduct extensive research and develop innovative approaches to address pressing energy challenges.",
+        "image": "https://www.fandm.edu/uploads/files/893787510953266481-img-3871-sarahtasker-in-lab.0.1105.3024.1822.full.jpg",
+        "category": "University News",
+        "tags": ["research", "grant", "energy"]
+    },
+    {
+        "id":"4",
+        "heading": "New Science Building Inauguration",
+        "title": "State-of-the-Art Science Building Inaugurated at University X",
+        "news": "University X recently celebrated the grand inauguration of its new state-of-the-art science building. The facility is equipped with advanced laboratories, cutting-edge research equipment, and collaborative spaces to foster innovation and scientific discovery.",
+        "image": "https://c.ndtvimg.com/2023-05/77pfe5v_interior-of-new-parliament-building_625x300_27_May_23.jpg",
+        "category": "University News",
+        "tags": ["inauguration", "science", "research"]
+    },
+    {
+        "id":"5",
+        "heading": "Scholarship Program Announcement",
+        "title": "University Y Introduces New Scholarship Program for Underprivileged Students",
+        "news": "University Y has launched a new scholarship program aimed at providing financial assistance to underprivileged students. The program aims to support students with exceptional academic potential but limited financial resources, enabling them to pursue higher education and achieve their career goals.",
+        "image": "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/scholarship-program-flyer-design-template-89af41dd405df1b61b3d9a42733af9f4_screen.jpg?ts=1611034289",
+        "category": "University News",
+        "tags": ["scholarship", "education", "students"]
+    },
+    {
+        "id":"6",
+        "heading": "Research Grant Awarded to Professor Z",
+        "title": "Professor Z Receives Prestigious Research Grant for Groundbreaking Study",
+        "news": "Professor Z, a renowned faculty member at University W, has been awarded a prestigious research grant for their groundbreaking study on sustainable energy solutions. The grant will enable Professor Z and their research team to conduct extensive research and develop innovative approaches to address pressing energy challenges.",
+        "image": "https://www.fandm.edu/uploads/files/893787510953266481-img-3871-sarahtasker-in-lab.0.1105.3024.1822.full.jpg",
+        "category": "University News",
+        "tags": ["research", "grant", "energy"]
+    }
+]

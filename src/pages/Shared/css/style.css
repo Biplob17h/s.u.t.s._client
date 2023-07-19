@@ -18,3 +18,12 @@
     font-family: 'Montserrat', sans-serif;
     color: #434343;
 }
+.space-between{
+    justify-content: space-between;
+}
+.space-around{
+    justify-content: space-around;
+}
+.space-evenly{
+    justify-content: space-evenly;
+}
