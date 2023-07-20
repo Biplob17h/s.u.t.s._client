@@ -108,7 +108,8 @@ const Navbar = () => {
                       <div className="dropdown dropdown-end">
                         <label
                           tabIndex={0}
-                          className="btn btn-ghost btn-circle">
+                          className="btn btn-ghost btn-circle"
+                        >
                           <div className="indicator">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
@@ -163,6 +164,9 @@ const Navbar = () => {
               <li>
                 <Link to="/about">About Us</Link>
               </li>
+              <li>
+                <Link to="/news">News</Link>
+              </li>
               {user ? (
                 <></>
               ) : (
@@ -198,7 +202,8 @@ const Navbar = () => {
           <Link
             onClick={handleNav}
             to="/"
-            className="btn btn-ghost hover:text-[#0693e3]">
+            className="btn btn-ghost hover:text-[#0693e3]"
+          >
             Home
           </Link>
           <Link to="/shop" className="btn btn-ghost hover:text-[#0693e3]">
@@ -208,7 +213,12 @@ const Navbar = () => {
           <Link to="/blog" className="btn btn-ghost hover:text-[#0693e3]">
             Blog
           </Link>
-          <Link className="btn btn-ghost hover:text-[#0693e3]">About Us</Link>
+          <Link to="/about" className="btn btn-ghost hover:text-[#0693e3]">
+            About Us
+          </Link>
+          <Link to="/news" className="btn btn-ghost hover:text-[#0693e3]">
+            News
+          </Link>
           {user ? (
             <>
               {/* cart svg */}
@@ -220,7 +230,8 @@ const Navbar = () => {
                       className="h-5 w-5"
                       fill="none"
                       viewBox="0 0 24 24"
-                      stroke="currentColor">
+                      stroke="currentColor"
+                    >
                       <path
                         strokeLinecap="round"
                         strokeLinejoin="round"
@@ -235,7 +246,8 @@ const Navbar = () => {
                 </label>
                 <div
                   tabIndex={0}
-                  className="mt-3 z-[1] card card-compact dropdown-content w-52 bg-base-100 shadow">
+                  className="mt-3 z-[1] card card-compact dropdown-content w-52 bg-base-100 shadow"
+                >
                   <div className="card-body">
                     <span className="font-bold text-lg">
                       {order?.length} Items
@@ -261,7 +273,8 @@ const Navbar = () => {
                 </label>
                 <ul
                   tabIndex={0}
-                  className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+                >
                   <li>
                     <Link className="justify-between">Profile</Link>
                   </li>
@@ -278,13 +291,15 @@ const Navbar = () => {
             <>
               <button
                 className="btn btn-ghost hover:text-[#0693e3]"
-                onClick={() => window.register.showModal()}>
+                onClick={() => window.register.showModal()}
+              >
                 Register
               </button>
               <Register></Register>
               <button
                 className="btn btn-ghost hover:text-[#0693e3]"
-                onClick={() => window.login.showModal()}>
+                onClick={() => window.login.showModal()}
+              >
                 Login
               </button>
               <Login></Login>
