@@ -35,13 +35,11 @@ const Register = () => {
     <>
       <dialog
         id="register"
-        className="modal  transition delay-300 duration-500"
-      >
+        className="modal  transition delay-300 duration-500">
         <form
           onSubmit={handleSubmit}
           method="dialog"
-          className="modal-box rounded-none"
-        >
+          className="modal-box rounded-none">
           <h1 className="text-center text-3xl font-semibold my-3">
             User Registration
           </h1>
@@ -73,15 +71,14 @@ const Register = () => {
             placeholder="Confirm Password"
             className="input input-bordered w-full rounded-none my-2 bg-gray-50 border border-none"
           />
-          <Link className=" my-2  text-xs hover:text-sky-600">
-            already have an account ?
-          </Link>
           <p className="my-2 text-sm font-medium">
             Your personal data will be used to support your experience
             throughout this website, to manage access to your account, and for
-            other purposes described in our privacy policy.
+            other purposes described in our <span className="cursor-pointer font-bold">Privacy Policy</span>.
           </p>
-          <button type="submit" className="btn bg-sky-600 w-full hover:bg-slate-500 text-white font-semibold rounded-none my-2">
+          <button
+            type="submit"
+            className="btn bg-sky-600 w-full hover:bg-slate-500 text-white font-semibold rounded-none my-2">
             REGISTER
           </button>
         </form>

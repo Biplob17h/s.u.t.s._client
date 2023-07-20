@@ -4,6 +4,7 @@ import StarRatings from "react-star-ratings";
 import { AuthContext } from "../../contextApi/UserContext";
 import { toast } from "react-hot-toast";
 
+
 const CourseSingle = () => {
   // context api
   const { user } = useContext(AuthContext);
@@ -43,10 +44,16 @@ const CourseSingle = () => {
         data.forEach((c) => {
           if (c?.course?.name === course?.name) {
             setBought(true);
+          } else {
+            setBought(false);
           }
         });
       });
   });
+  const testOnClicked = () => {
+    console.log("btn clicked");
+    
+  };
 
   return (
     <div className="cusText">
@@ -59,9 +66,11 @@ const CourseSingle = () => {
           </Link>
           /
           <Link to="/shop" className="px-2">
-            Course
+            Courses
           </Link>
-          <span className="pr-2 text-blue-400">/&#32;&#32;Course Single</span>
+          <span onClick={testOnClicked} className="pr-2 text-blue-400">
+            /&#32;&#32;Course Single
+          </span>
         </span>
       </div>
       {/* course info section */}
@@ -83,8 +92,7 @@ const CourseSingle = () => {
           <h1 className="text-xl mt-3">{course.description}</h1>
           {bought ? (
             <>
-              <h1
-                className="mt-20 text-[18px] font-semibold cusOpenSans text-white text-center pt-3 cursor-no-drop  h-[50px] w-[190px] bg-[#434343]">
+              <h1 className="mt-20 text-[18px] font-semibold cusOpenSans text-white text-center pt-3 cursor-no-drop  h-[50px] w-[190px] bg-[#434343]">
                 Bought
               </h1>
             </>

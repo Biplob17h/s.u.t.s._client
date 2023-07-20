@@ -7,29 +7,14 @@ import Login from "../../Authentication/Login/Login";
 
 const Navbar = () => {
   // context api
-    const { user, setUser } = useContext(AuthContext);
+  const { user, setUser } = useContext(AuthContext);
 
   // all state
   const [top, setTop] = useState(true);
   const [nav, setNav] = useState(0);
+  const [order, setOrder] = useState([]);
 
-  const handleNav = () => {
-    console.log(user);
-    console.log("clicked");
-  };
-  const handleLogOut = () => {
-    localStorage.setItem('email', '')
-    setUser('')
-    console.log("log out successfull");
-  };
-  const scroll = () => {
-    if (window.scrollY < 50) {
-      setTop(true);
-    } else {
-      setTop(false);
-    }
-    setNav(window.scrollY);
-  };
+  // use Effect
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -40,28 +25,70 @@ const Navbar = () => {
       window.removeEventListener("scroll", scroll);
     };
   }, [nav]);
-  
+
+  useEffect(() => {
+    fetch(`http://localhost:8080/api/v1/order?email=${user}`)
+      .then((res) => res.json())
+      .then((data) => {
+        setOrder(data)
+      });
+  });
+
+  // functions
+  const handleNav = () => {
+    console.log("clicked");
+  };
+  const handleLogOut = () => {
+    localStorage.setItem("email", "");
+    setUser("");
+    console.log("log out successfull");
+  };
+  const scroll = () => {
+    if (window.scrollY < 50) {
+      setTop(true);
+    } else {
+      setTop(false);
+    }
+    setNav(window.scrollY);
+  };
+
+  const subTotal = (order) => {
+    let subTotal = 0;
+    order?.forEach((o) => {
+      subTotal = subTotal + parseFloat(o.price);
+    });
+    return subTotal;
+  };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  useEffect(() => {
+    window.addEventListener("scroll", scroll);
+    return () => {
+      window.removeEventListener("scroll", scroll);
+    };
+  }, [nav]);
+
   return (
     <div
       className={`${
         top ? "opacity-100 md:opacity-10 md:hover:opacity-50" : ""
-      } fixed top-0 w-[384px] md:w-[1280px] z-10`}
-    >
+      } fixed top-0 w-[384px] md:w-[1280px] z-10`}>
       <div className="navbar bg-base-100 justify-between">
         {/* for small device */}
         <div className="flex opacity-100 md:hidden z-10">
           <div className="dropdown">
             <label
               tabIndex={0}
-              className="btn btn-ghost btn-circle opacity-100"
-            >
+              className="btn btn-ghost btn-circle opacity-100">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
                 fill="none"
                 viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
+                stroke="currentColor">
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -72,8 +99,7 @@ const Navbar = () => {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1]  p-2 shadow bg-base-100 rounded-box w-52"
-            >
+              className="menu menu-sm dropdown-content mt-3 z-[1]  p-2 shadow bg-base-100 rounded-box w-52">
               {user ? (
                 <>
                   <li className="flex flex-row justify-between">
@@ -89,8 +115,7 @@ const Navbar = () => {
                               className="h-5 w-5"
                               fill="none"
                               viewBox="0 0 24 24"
-                              stroke="currentColor"
-                        >
+                              stroke="currentColor">
                               <path
                                 strokeLinecap="round"
                                 strokeLinejoin="round"
@@ -99,7 +124,7 @@ const Navbar = () => {
                               />
                             </svg>
                             <span className="badge badge-sm indicator-item">
-                              8
+                              {order?.length}
                             </span>
                           </div>
                         </label>
@@ -109,8 +134,7 @@ const Navbar = () => {
                     <button className="btn">
                       <label
                         tabIndex={0}
-                        className="btn btn-ghost btn-circle avatar"
-                  >
+                        className="btn btn-ghost btn-circle avatar">
                         <div className="w-10 rounded-full">
                           <img
                             src="/images/stock/photo-1534528741775-53994a69daeb.jpg"
@@ -128,7 +152,7 @@ const Navbar = () => {
                 <Link to="/">Home</Link>
               </li>
               <li>
-                <Link to="/shop">Course</Link>
+                <Link to="/shop">Courses</Link>
               </li>
               <li>
                 <Link to="">Events</Link>
@@ -178,7 +202,7 @@ const Navbar = () => {
             Home
           </Link>
           <Link to="/shop" className="btn btn-ghost hover:text-[#0693e3]">
-            Course
+            Courses
           </Link>
           <Link className="btn btn-ghost hover:text-[#0693e3]">Events</Link>
           <Link to="/blog" className="btn btn-ghost hover:text-[#0693e3]">
@@ -204,15 +228,19 @@ const Navbar = () => {
                         d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
                       />
                     </svg>
-                    <span className="badge badge-sm indicator-item">8</span>
+                    <span className="badge badge-sm indicator-item">
+                      {order?.length}
+                    </span>
                   </div>
                 </label>
                 <div
                   tabIndex={0}
                   className="mt-3 z-[1] card card-compact dropdown-content w-52 bg-base-100 shadow">
                   <div className="card-body">
-                    <span className="font-bold text-lg">8 Items</span>
-                    <span className="text-info">Subtotal: $999</span>
+                    <span className="font-bold text-lg">
+                      {order?.length} Items
+                    </span>
+                    <span className="text-info">Subtotal: {subTotal}$</span>
                     <div className="card-actions">
                       <button className="btn btn-primary btn-block">
                         View cart
@@ -248,9 +276,17 @@ const Navbar = () => {
             </>
           ) : (
             <>
-              <button className="btn btn-ghost hover:text-[#0693e3]" onClick={()=>window.register.showModal()}>Register</button>
+              <button
+                className="btn btn-ghost hover:text-[#0693e3]"
+                onClick={() => window.register.showModal()}>
+                Register
+              </button>
               <Register></Register>
-              <button className="btn btn-ghost hover:text-[#0693e3]" onClick={()=>window.login.showModal()}>Login</button>
+              <button
+                className="btn btn-ghost hover:text-[#0693e3]"
+                onClick={() => window.login.showModal()}>
+                Login
+              </button>
               <Login></Login>
             </>
           )}

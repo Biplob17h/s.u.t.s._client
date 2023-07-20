@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "id": "64b0bf989f6ace6cfada4667",
     "name": "Chemistry",
     "img": "https://www.thoughtco.com/thmb/6MsMmUK27akFhb8i89kj95J5iko=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-545286316-433dd345105e4c6ebe4cdd8d2317fdaa.jpg",
     "category": "Science",
@@ -16,7 +16,7 @@
     "price": 799.99
   },
   {
-    "id": 2,
+    "id": "64b0bf989f6ace6cfada4697",
     "name": "Web Development",
     "img": "https://geekflare.com/wp-content/uploads/2023/02/Popularity-of-Visual-Studio-Code.png",
     "category": "Computer Science",
@@ -32,7 +32,7 @@
     "price": 269.99
   },
   {
-    "id": 3,
+    "id": "64b0bf989f6ace6cfada4690",
     "name": "Machine Learning",
     "img": "https://imageio.forbes.com/specials-images/dam/imageserve/966248982/960x0.jpg?height=456&width=711&fit=bounds",
     "category": "Computer Science",
