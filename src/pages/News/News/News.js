@@ -8,7 +8,10 @@ import { BsTwitter } from "react-icons/bs";
 import { LiaPinterestP } from "react-icons/lia";
 
 const News = () => {
+  // all state
   const [news, setNews] = useState([]);
+
+  // all effect
   useEffect(() => {
     fetch("latestnews.json")
       .then((res) => res.json())

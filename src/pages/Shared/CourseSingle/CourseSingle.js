@@ -3,11 +3,13 @@ import { Link, useLoaderData } from "react-router-dom";
 import StarRatings from "react-star-ratings";
 import { AuthContext } from "../../contextApi/UserContext";
 import { toast } from "react-hot-toast";
-
+import { OrderContext } from "../../contextApi/HandleOrderContext";
 
 const CourseSingle = () => {
   // context api
   const { user } = useContext(AuthContext);
+  const { orderLength, setOrderLength } = useContext(OrderContext);
+  
   // load data
   const course = useLoaderData();
 
@@ -15,14 +17,35 @@ const CourseSingle = () => {
   const [info, setInfo] = useState("description");
   const [bought, setBought] = useState(false);
 
+  // use Effect
+  useEffect(() => {
+    fetch(`http://localhost:8080/api/v1/order?email=${user}`)
+      .then((res) => res.json())
+      .then((data) => {
+        data.forEach((c) => {
+          if (c?.course?.name === course?.name) {
+            setBought(true);
+          } else {
+            setBought(false);
+          }
+        });
+      });
+  });
+
   // function
   const handleAddToCart = () => {
+
+    // create order for database
     const Order = {
       email: user,
       course: course,
     };
     console.log(Order);
 
+    // increase data manually
+    setOrderLength(orderLength + 1);
+
+    // post to database
     fetch("http://localhost:8080/api/v1/order", {
       method: "POST",
       headers: {
@@ -37,22 +60,8 @@ const CourseSingle = () => {
       });
   };
 
-  useEffect(() => {
-    fetch(`http://localhost:8080/api/v1/order?email=${user}`)
-      .then((res) => res.json())
-      .then((data) => {
-        data.forEach((c) => {
-          if (c?.course?.name === course?.name) {
-            setBought(true);
-          } else {
-            setBought(false);
-          }
-        });
-      });
-  });
   const testOnClicked = () => {
     console.log("btn clicked");
-    
   };
 
   return (
@@ -93,7 +102,7 @@ const CourseSingle = () => {
           {bought ? (
             <>
               <h1 className="mt-20 text-[18px] font-semibold cusOpenSans text-white text-center pt-3 cursor-no-drop  h-[50px] w-[190px] bg-[#434343]">
-                Bought
+                Already in Cart
               </h1>
             </>
           ) : (
