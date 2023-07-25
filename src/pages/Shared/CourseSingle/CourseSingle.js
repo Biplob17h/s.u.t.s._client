@@ -9,13 +9,14 @@ const CourseSingle = () => {
   // context api
   const { user } = useContext(AuthContext);
   const { orderLength, setOrderLength } = useContext(OrderContext);
-  
+
   // load data
   const course = useLoaderData();
 
   // all state
   const [info, setInfo] = useState("description");
   const [bought, setBought] = useState(false);
+  const [study, setStduy] = useState(false);
 
   // use Effect
   useEffect(() => {
@@ -31,10 +32,24 @@ const CourseSingle = () => {
         });
       });
   });
+  useEffect(() => {
+    fetch(`http://localhost:8080/api/v1/study?email=${user}`)
+      .then((res) => res.json())
+      .then((data) => {
+        data.forEach((s) => {
+          s?.studies.forEach((c) => {
+            if (course?.name === c?.course?.name) {
+              setStduy(true);
+            } else {
+              setStduy(false);
+            }
+          });
+        });
+      });
+  });
 
   // function
   const handleAddToCart = () => {
-
     // create order for database
     const Order = {
       email: user,
@@ -60,6 +75,10 @@ const CourseSingle = () => {
       });
   };
 
+  const handleDropOut = () => {
+    
+  };
+
   const testOnClicked = () => {
     console.log("btn clicked");
   };
@@ -67,9 +86,9 @@ const CourseSingle = () => {
   return (
     <div className="cusText">
       {/* course top section */}
-      <div className="cusShopBackImg mt-40 h-[200px] px-32 flex flex-row items-center justify-between">
-        <h1 className="text-4xl font-bold">Course</h1>
-        <span className="text-[18px]">
+      <div className="cusShopBackImg mt-40 h-[200px]  md:flex flex-row items-center justify-between px-10 md:px-32">
+        <h1 className="text-4xl font-bold pt-10 md:pt-0">Course</h1>
+        <span className="text-[18px] ">
           <Link to="/" className="pr-2">
             Home
           </Link>
@@ -83,11 +102,11 @@ const CourseSingle = () => {
         </span>
       </div>
       {/* course info section */}
-      <div className="my-10 mx-20 flex ">
-        <div className="w-1/2">
-          <img className="h-[450px]" src={course.img} alt="" />
+      <div className="my-10 mx-5 md:flex md:mx-20">
+        <div className="md:w-1/2">
+          <img className="h-[450px] rounded" src={course.img} alt="" />
         </div>
-        <div className="w-1/2 ml-10 py-10">
+        <div className="md:w-1/2 md:ml-10 py-10">
           <h1 className="text-5xl font-bold">{course.name}</h1>
           <StarRatings
             rating={course.rating}
@@ -105,6 +124,12 @@ const CourseSingle = () => {
                 Already in Cart
               </h1>
             </>
+          ) : study ? (
+            <div>
+              <h1 className="mr-3 mt-20 text-[18px] font-semibold cusOpenSans text-white text-center pt-3 cursor-no-drop  h-[50px] w-full md:w-[190px] bg-[#434343] ">
+                Already Studying
+              </h1>
+            </div>
           ) : (
             <>
               <h1
@@ -117,14 +142,14 @@ const CourseSingle = () => {
         </div>
       </div>
       {/* more info section */}
-      <div className="flex mx-20">
+      <div className="md:flex md:mx-20">
         <h1
           onClick={() => {
             setInfo("description");
           }}
           className={`${
             info === "description" ? "text-[#2d76b2]" : ""
-          } text-[17px] border p-4 w-[130px] text-center rounded cursor-pointer select-none hover:text-[#2d76b2]`}>
+          } text-[17px] border p-4 md:w-[130px] text-center rounded cursor-pointer select-none hover:text-[#2d76b2]`}>
           Description
         </h1>
         <h1
@@ -133,7 +158,7 @@ const CourseSingle = () => {
           }}
           className={`${
             info === "additional" ? "text-[#2d76b2]" : ""
-          } text-[17px] border p-4 w-[220px] text-center mx-2 rounded cursor-pointer select-none hover:text-[#2d76b2]`}>
+          } text-[17px] border p-4 md:w-[220px] text-center mx-2 rounded cursor-pointer select-none hover:text-[#2d76b2]`}>
           Additional_information
         </h1>
         <h1
@@ -142,20 +167,20 @@ const CourseSingle = () => {
           }}
           className={`${
             info === "reviews" ? "text-[#2d76b2]" : ""
-          } text-[17px] border p-4 w-[140px] text-center rounded cursor-pointer select-none hover:text-[#2d76b2]`}>
+          } text-[17px] border p-4 md:w-[140px] text-center rounded cursor-pointer select-none hover:text-[#2d76b2]`}>
           Reviews
         </h1>
       </div>
       <div
         className={`${
           info === "description" ? "block" : "hidden"
-        } h-full mt-5 mx-20 mb-20`}>
+        } h-full mt-5 mx-2 md:mx-20 mb-20`}>
         <h1>{course.full_description}</h1>
       </div>
       <div
         className={`${
           info === "additional" ? "block" : "hidden"
-        }  h-[500px] mt-5 mx-20 mb-20 `}>
+        }  md:h-[500px] mt-5 mx-5 md:mx-20 mb-20 `}>
         <h1 className="text-2xl font-semibold">Course Name : {course.name}</h1>
         <h1 className="text-[18px] mt-10 text-slate-700 ">
           <span className="font-semibold">Category</span>
