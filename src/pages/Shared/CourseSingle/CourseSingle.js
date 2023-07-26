@@ -47,6 +47,7 @@ const CourseSingle = () => {
         });
       });
   });
+  
 
   // function
   const handleAddToCart = () => {
@@ -75,9 +76,7 @@ const CourseSingle = () => {
       });
   };
 
-  const handleDropOut = () => {
-    
-  };
+  const handleDropOut = () => {};
 
   const testOnClicked = () => {
     console.log("btn clicked");

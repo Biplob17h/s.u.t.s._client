@@ -43,11 +43,11 @@ const Navbar = () => {
   // test
   const handleNav = () => {
     console.log("clicked");
-    let subTotal = 0;
-    order?.forEach((o) => {
-      subTotal = subTotal + parseFloat(o.course.price);
+    const orr = []
+    order.forEach(element => {
+      orr.push(element.course)
     });
-    console.log(subTotal);
+    console.log(orr)
   };
 
   // on click logout

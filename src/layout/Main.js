@@ -4,16 +4,19 @@ import { Outlet } from "react-router-dom";
 import Footer from "../pages/Shared/Footer/Footer";
 import { Toaster } from "react-hot-toast";
 import HandleOrderContext from "../pages/contextApi/HandleOrderContext";
+import HandleStudyContext from "../pages/contextApi/HandleStudyContext";
 
 const Main = () => {
   return (
     <HandleOrderContext>
-      <div>
-        <Navbar></Navbar>
-        <Outlet></Outlet>
-        <Footer></Footer>
-        <Toaster />
-      </div>
+      <HandleStudyContext>
+        <div>
+          <Navbar></Navbar>
+          <Outlet></Outlet>
+          <Footer></Footer>
+          <Toaster />
+        </div>
+      </HandleStudyContext>
     </HandleOrderContext>
   );
 };

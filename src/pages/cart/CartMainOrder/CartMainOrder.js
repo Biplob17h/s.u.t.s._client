@@ -7,15 +7,19 @@ import { countSubTotal } from "../../components/CountSubTotal";
 import CartForSmall from "../../components/CartForSmall";
 import { toast } from "react-hot-toast";
 import { AuthContext } from "../../contextApi/UserContext";
+import { handleCourseInOrder } from "../../contextApi/HandleCourse";
 
 const CartMainOrder = () => {
   // context api
   const { order, setOrderLength } = useContext(OrderContext);
   const { user } = useContext(AuthContext);
+  
 
   //   function
   const total = countSubTotal(order);
   const navegate = useNavigate();
+
+  const orderCourse = handleCourseInOrder(order)
 
   const handleConfirmOrder = () => {
     ScrollToTop();
