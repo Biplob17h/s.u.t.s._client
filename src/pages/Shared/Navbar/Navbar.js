@@ -132,7 +132,7 @@ const Navbar = () => {
                 <Link to="/shop">Course</Link>
               </li>
               <li>
-                <Link to="">Events</Link>
+                <Link to="/events">Events</Link>
               </li>
               <li>
                 <Link to="/blog">Blog</Link>
@@ -185,7 +185,7 @@ const Navbar = () => {
           <Link to="/shop" className="btn btn-ghost hover:text-[#0693e3]">
             Course
           </Link>
-          <Link className="btn btn-ghost hover:text-[#0693e3]">Events</Link>
+          <Link className="btn btn-ghost hover:text-[#0693e3]" to='/events'>Events</Link>
           <Link to="/blog" className="btn btn-ghost hover:text-[#0693e3]">
             Blog
           </Link>

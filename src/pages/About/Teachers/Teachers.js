@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
-import signature from "../../../assets/About/signature-1.png";
-import teacherImg from "../../../assets/About/teachers-1.jpeg";
+import signature from "../../../assets/about/signature-1.png";
+import teacherImg from "../../../assets/about/teachers-1.jpeg";
 import "../About.css";
 import { Link } from "react-router-dom";
+import TeacherDetailsSingle from "../TeacherDetails/TeacherDetailsSingle";
 const Teachers = () => {
   const [teachersInfo, setTeachersInfo] = useState([]);
 
@@ -31,16 +32,12 @@ const Teachers = () => {
         </div>
       </div>
       <div className=" grid my-16 res-teacher-card">
-
-          {teachersInfo.map((teachers) => (
-            <div className="text-center flex flex-col items-center justify-center pt-4"><Link to='/teacherdetails'>
-              <img src={teachers.image} alt="" />
-              <h1 className="text-2xl py-3">{teachers.name}</h1>
-              <p className=" text-base">{teachers.specialty}</p>
-              </Link>
-            </div>
-          ))}
-
+        {teachersInfo.map((teachers) => (
+          <TeacherDetailsSingle
+          key={teachers.id}
+          teachers={teachers}
+          ></TeacherDetailsSingle>
+        ))}
       </div>
     </div>
   );

@@ -4,24 +4,18 @@ import teacherImg from '../../../assets/about/teachers-1.jpeg'
 import { BsCheck } from 'react-icons/bs';
 import TeacherDetailsCarousel from "./TeacherDetailsCarousel";
 import '../About.css'
+import { useLocation } from "react-router-dom";
 
 
 const TeacherDetails = () => {
-  // const {id, name, about,education,experience,skills,certificates,education_skills} = useLoaderData()
-  const [teacherInfo, setTeachersInfo] = useState([]);
-
-  useEffect(() => {
-    fetch("teachers.json")
-      .then((res) => res.json())
-      .then((data) => setTeachersInfo(data));
-  }, []);
+  const location = useLocation()
 
   return (
     <div>
       <TeacherDetailsBanner></TeacherDetailsBanner>
       <div className="flex res-teacherdetails">
       <div className=" py-20 res-teacherdetails2">
-        <h1 className=" text-4xl font-bold">Joseph White</h1>
+        <h1 className=" text-4xl font-bold">llll</h1>
         <p className=" text-base py-5">
           Lorem Ipsn gravida nibh vel velit auctor aliquetnean sollicitudin,
           lorem quis bibendum auci elit consequat ipsutis sem nibh id elit dicat

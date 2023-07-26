@@ -8,6 +8,7 @@ import Blog from "../pages/Shared/Navbar/Blog/blogPage";
 import BlogForm from "../pages/Shared/Navbar/Blog/blogForm";
 import TeacherDetails from "../pages/About/TeacherDetails/TeacherDetails";
 import News from "../pages/News/News/News";
+import Events from "../pages/Events/Events/Events";
 
 export const routes = createBrowserRouter([
   {
@@ -29,14 +30,18 @@ export const routes = createBrowserRouter([
       {
         path:'/about',
         element:<About></About>
-      },     
+      },   
       {
         path:'/news',
         element:<News></News>
       },     
       {
-        path:'/teacherdetails',
+        path:'/about/teachers',
         element:<TeacherDetails></TeacherDetails>
+      },
+      {
+        path:'events',
+        element:<Events></Events>
       },
       {
         path: "/blog-form",
