@@ -12,7 +12,8 @@
     "test": 40,
     "in_week": 4,
     "rating": 8.2,
-    "price": 799.99
+    "price": 799.99,
+    "studying": false
   },
   {
     "name": "Mathematics",
@@ -27,7 +28,8 @@
     "test": 40,
     "in_week": 5,
     "rating": 9.0,
-    "price": 799.99
+    "price": 799.99,
+    "studying": false
   },
   {
     "name": "English Literature",
@@ -42,7 +44,8 @@
     "test": 25,
     "in_week": 3,
     "rating": 7.5,
-    "price": 390.90
+    "price": 390.9,
+    "studying": false
   },
   {
     "name": "History",
@@ -57,7 +60,8 @@
     "test": 27,
     "in_week": 4,
     "rating": 8.8,
-    "price": 450.00
+    "price": 450.0,
+    "studying": false
   },
   {
     "name": "Chemistry",
@@ -72,7 +76,8 @@
     "test": 45,
     "in_week": 5,
     "rating": 9.7,
-    "price": 799.99
+    "price": 799.99,
+    "studying": false
   },
   {
     "name": "Business Administration",
@@ -87,7 +92,8 @@
     "test": 40,
     "in_week": 4,
     "rating": 9.2,
-    "price": 299.90
+    "price": 299.9,
+    "studying": false
   },
   {
     "name": "Psychology",
@@ -102,7 +108,8 @@
     "test": 28,
     "in_week": 3,
     "rating": 8.4,
-    "price": 489.80
+    "price": 489.8,
+    "studying": false
   },
   {
     "name": "Art History",
@@ -117,7 +124,8 @@
     "test": 24,
     "in_week": 2,
     "rating": 7.9,
-    "price": 250.00
+    "price": 250.0,
+    "studying": false
   },
   {
     "name": "Sociology",
@@ -132,7 +140,8 @@
     "test": 30,
     "in_week": 4,
     "rating": 8.1,
-    "price": 555.55
+    "price": 555.55,
+    "studying": false
   },
   {
     "name": "Economics",
@@ -147,7 +156,8 @@
     "test": 40,
     "in_week": 4,
     "rating": 8.6,
-    "price": 688.88
+    "price": 688.88,
+    "studying": false
   },
   {
     "name": "Biology",
@@ -162,7 +172,8 @@
     "test": 45,
     "in_week": 4,
     "rating": 8.9,
-    "price": 799.99
+    "price": 799.99,
+    "studying": false
   },
   {
     "name": "Political Science",
@@ -177,7 +188,8 @@
     "test": 25,
     "in_week": 3,
     "rating": 8.3,
-    "price": 490.50
+    "price": 490.5,
+    "studying": false
   },
   {
     "name": "Environmental Science",
@@ -192,7 +204,8 @@
     "test": 20,
     "in_week": 2,
     "rating": 7.7,
-    "price": 479.77
+    "price": 479.77,
+    "studying": false
   },
   {
     "name": "Music Theory",
@@ -207,7 +220,8 @@
     "test": 2,
     "in_week": 3,
     "rating": 7.8,
-    "price": 190.90
+    "price": 190.9,
+    "studying": false
   },
   {
     "name": "Computer Engineering",
@@ -222,7 +236,8 @@
     "test": 90,
     "in_week": 4,
     "rating": 8.5,
-    "price": 666.66
+    "price": 666.66,
+    "studying": false
   },
   {
     "name": "Graphic Design",
@@ -237,7 +252,8 @@
     "test": 24,
     "in_week": 3,
     "rating": 8.2,
-    "price": 180.80
+    "price": 180.8,
+    "studying": false
   },
   {
     "name": "Journalism",
@@ -252,7 +268,8 @@
     "test": 15,
     "in_week": 2,
     "rating": 7.6,
-    "price": 230.00
+    "price": 230.0,
+    "studying": false
   },
   {
     "name": "Film Studies",
@@ -267,7 +284,8 @@
     "test": 6,
     "in_week": 3,
     "rating": 7.9,
-    "price": 225.25
+    "price": 225.25,
+    "studying": false
   },
   {
     "name": "Marketing",
@@ -282,7 +300,8 @@
     "test": 30,
     "in_week": 4,
     "rating": 8.3,
-    "price": 509.99
+    "price": 509.99,
+    "studying": false
   },
   {
     "name": "Mechanical Engineering",
@@ -297,7 +316,8 @@
     "test": 60,
     "in_week": 4,
     "rating": 8.7,
-    "price": 699.99
+    "price": 699.99,
+    "studying": false
   },
   {
     "name": "Astrophysics",
@@ -312,7 +332,8 @@
     "test": 25,
     "in_week": 3,
     "rating": 8.4,
-    "price": 489.89
+    "price": 489.89,
+    "studying": false
   },
   {
     "name": "Political Philosophy",
@@ -327,7 +348,8 @@
     "test": 15,
     "in_week": 3,
     "rating": 8.1,
-    "price": 199.99
+    "price": 199.99,
+    "studying": false
   },
   {
     "name": "Sports Science",
@@ -342,7 +364,8 @@
     "test": 40,
     "in_week": 4,
     "rating": 8.6,
-    "price": 480.89
+    "price": 480.89,
+    "studying": false
   },
   {
     "name": "Civil Engineering",
@@ -357,7 +380,8 @@
     "test": 40,
     "in_week": 4,
     "rating": 8.9,
-    "price": 699.99
+    "price": 699.99,
+    "studying": false
   },
   {
     "name": "Architecture",
@@ -372,7 +396,8 @@
     "test": 24,
     "in_week": 3,
     "rating": 8.3,
-    "price": 390.90
+    "price": 390.9,
+    "studying": false
   },
   {
     "name": "Anthropology",
@@ -387,7 +412,8 @@
     "test": 24,
     "in_week": 2,
     "rating": 7.8,
-    "price": 250.00
+    "price": 250.0,
+    "studying": false
   },
   {
     "name": "Data Science",
@@ -402,7 +428,8 @@
     "test": 36,
     "in_week": 3,
     "rating": 8.2,
-    "price": 469.69
+    "price": 469.69,
+    "studying": false
   },
   {
     "name": "Fashion Design",
@@ -417,7 +444,8 @@
     "test": 24,
     "in_week": 4,
     "rating": 8.5,
-    "price": 489.89
+    "price": 489.89,
+    "studying": false
   },
   {
     "name": "Electrical Engineering",
@@ -432,7 +460,8 @@
     "test": 40,
     "in_week": 4,
     "rating": 8.7,
-    "price": 590.00
+    "price": 590.0,
+    "studying": false
   },
   {
     "name": "Chemical Engineering",
@@ -447,7 +476,8 @@
     "test": 2,
     "in_week": 2,
     "rating": 7.9,
-    "price": 799.99
+    "price": 799.99,
+    "studying": false
   },
   {
     "name": "Music Performance",
@@ -461,7 +491,8 @@
     "test": 3,
     "in_week": 3,
     "rating": 8.2,
-    "price": 168.77
+    "price": 168.77,
+    "studying": false
   },
   {
     "name": "International Relations",
@@ -475,7 +506,8 @@
     "test": 23,
     "in_week": 4,
     "rating": 8.6,
-    "price": 299.99
+    "price": 299.99,
+    "studying": false
   },
   {
     "name": "Mechatronics",
@@ -490,7 +522,8 @@
     "test": 40,
     "in_week": 4,
     "rating": 8.9,
-    "price": 659.59
+    "price": 659.59,
+    "studying": false
   },
   {
     "name": "Biomedical Engineering",
@@ -505,7 +538,8 @@
     "test": 39,
     "in_week": 3,
     "rating": 8.3,
-    "price": 599.99
+    "price": 599.99,
+    "studying": false
   },
   {
     "name": "Philosophy",
@@ -519,7 +553,8 @@
     "test": 15,
     "in_week": 2,
     "rating": 7.8,
-    "price": 220.20
+    "price": 220.2,
+    "studying": false
   },
   {
     "name": "Computer Networks",
@@ -534,7 +569,8 @@
     "test": 15,
     "in_week": 3,
     "rating": 8.2,
-    "price": 240.00
+    "price": 240.0,
+    "studying": false
   },
   {
     "name": "Dance",
@@ -549,7 +585,8 @@
     "test": 2,
     "in_week": 4,
     "rating": 8.5,
-    "price": 111.11
+    "price": 111.11,
+    "studying": false
   },
   {
     "name": "Astronomy",
@@ -564,7 +601,8 @@
     "test": 10,
     "in_week": 4,
     "rating": 8.7,
-    "price": 199.99
+    "price": 199.99,
+    "studying": false
   },
   {
     "name": "Environmental Engineering",
@@ -579,7 +617,8 @@
     "test": 30,
     "in_week": 3,
     "rating": 8.4,
-    "price": 487.89
+    "price": 487.89,
+    "studying": false
   },
   {
     "name": "Criminal Justice",
@@ -594,7 +633,8 @@
     "test": 5,
     "in_week": 2,
     "rating": 7.9,
-    "price": 199.99
+    "price": 199.99,
+    "studying": false
   },
   {
     "name": "Software Engineering",
@@ -609,7 +649,8 @@
     "test": 60,
     "in_week": 4,
     "rating": 9.3,
-    "price": 699.99
+    "price": 699.99,
+    "studying": false
   },
   {
     "name": "Theater Arts",
@@ -624,7 +665,8 @@
     "test": 4,
     "in_week": 4,
     "rating": 8.6,
-    "price": 120.00
+    "price": 120.0,
+    "studying": false
   },
   {
     "name": "Genetics",
@@ -639,7 +681,8 @@
     "test": 49,
     "in_week": 4,
     "rating": 8.9,
-    "price": 790.90
+    "price": 790.9,
+    "studying": false
   },
   {
     "name": "Mechanical Design",
@@ -654,7 +697,8 @@
     "test": 20,
     "in_week": 3,
     "rating": 8.4,
-    "price": 377.77
+    "price": 377.77,
+    "studying": false
   },
   {
     "name": "Media Studies",
@@ -669,7 +713,8 @@
     "test": 5,
     "in_week": 2,
     "rating": 7.9,
-    "price": 199.99
+    "price": 199.99,
+    "studying": false
   },
   {
     "name": "Machine Learning",
@@ -684,7 +729,8 @@
     "test": 40,
     "in_week": 3,
     "rating": 9.6,
-    "price": 509.09
+    "price": 509.09,
+    "studying": false
   },
   {
     "name": "Visual Arts",
@@ -699,7 +745,8 @@
     "test": 7,
     "in_week": 4,
     "rating": 8.6,
-    "price": 234.56
+    "price": 234.56,
+    "studying": false
   },
   {
     "name": "Neuroscience",
@@ -714,7 +761,8 @@
     "test": 29,
     "in_week": 4,
     "rating": 8.9,
-    "price": 500.01
+    "price": 500.01,
+    "studying": false
   },
   {
     "name": "Literature",
@@ -729,7 +777,8 @@
     "test": 8,
     "in_week": 2,
     "rating": 7.9,
-    "price":330.30
+    "price": 330.3,
+    "studying": false
   },
   {
     "name": "Cybersecurity",
@@ -744,7 +793,8 @@
     "test": 26,
     "in_week": 3,
     "rating": 8.3,
-    "price": 369.99
+    "price": 369.99,
+    "studying": false
   },
   {
     "name": "Photography",
@@ -759,7 +809,8 @@
     "test": 48,
     "in_week": 4,
     "rating": 8.6,
-    "price": 270.70
+    "price": 270.7,
+    "studying": false
   },
   {
     "name": "Geology",
@@ -774,7 +825,8 @@
     "test": 13,
     "in_week": 4,
     "rating": 8.9,
-    "price": 299.99
+    "price": 299.99,
+    "studying": false
   },
   {
     "name": "Web Development",
@@ -789,7 +841,8 @@
     "test": 36,
     "in_week": 3,
     "rating": 9.5,
-    "price": 269.99
+    "price": 269.99,
+    "studying": false
   },
   {
     "name": "Painting",
@@ -804,7 +857,8 @@
     "test": 24,
     "in_week": 4,
     "rating": 8.6,
-    "price": 209.90
+    "price": 209.9,
+    "studying": false
   },
   {
     "name": "Microbiology",
@@ -819,7 +873,8 @@
     "test": 40,
     "in_week": 4,
     "rating": 8.9,
-    "price": 709.99
+    "price": 709.99,
+    "studying": false
   },
   {
     "name": "History",
@@ -834,7 +889,8 @@
     "test": 20,
     "in_week": 2,
     "rating": 7.9,
-    "price": 320.22
+    "price": 320.22,
+    "studying": false
   },
   {
     "name": "Artificial Intelligence",
@@ -849,7 +905,8 @@
     "test": 40,
     "in_week": 4,
     "rating": 8.3,
-    "price": 666.67
+    "price": 666.67,
+    "studying": false
   },
   {
     "name": "Sculpture",
@@ -864,7 +921,8 @@
     "test": 4,
     "in_week": 4,
     "rating": 8.6,
-    "price": 202.04
+    "price": 202.04,
+    "studying": false
   },
   {
     "name": "Ecology",
@@ -879,7 +937,8 @@
     "test": 20,
     "in_week": 4,
     "rating": 8.9,
-    "price": 480.00
+    "price": 480.0,
+    "studying": false
   },
   {
     "name": "Astrobiology",
@@ -894,7 +953,8 @@
     "test": 22,
     "in_week": 3,
     "rating": 8.4,
-    "price": 470.77
+    "price": 470.77,
+    "studying": false
   },
   {
     "name": "Archaeology",
@@ -909,7 +969,8 @@
     "test": 14,
     "in_week": 3,
     "rating": 8.9,
-    "price": 606.77
+    "price": 606.77,
+    "studying": false
   },
   {
     "name": "Robotics",
@@ -924,7 +985,8 @@
     "test": 6,
     "in_week": 3,
     "rating": 8.3,
-    "price": 699.99
+    "price": 699.99,
+    "studying": false
   },
   {
     "name": "Marine Biology",
@@ -939,6 +1001,7 @@
     "test": 20,
     "in_week": 4,
     "rating": 9.6,
-    "price": 799.99
+    "price": 799.99,
+    "studying": false
   }
 ]

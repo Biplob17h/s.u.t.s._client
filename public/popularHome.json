@@ -1,6 +1,6 @@
 [
   {
-    "id": "64bff6d95c17073911a66fc5",
+    "_id": "64bff6d95c17073911a66fc5",
     "name": "Chemistry",
     "img": "https://www.thoughtco.com/thmb/6MsMmUK27akFhb8i89kj95J5iko=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-545286316-433dd345105e4c6ebe4cdd8d2317fdaa.jpg",
     "category": "Science",
@@ -16,7 +16,7 @@
     "price": 799.99
   },
   {
-    "id": "64bff6d95c17073911a66ff5",
+    "_id": "64bff6d95c17073911a66ff5",
     "name": "Web Development",
     "img": "https://geekflare.com/wp-content/uploads/2023/02/Popularity-of-Visual-Studio-Code.png",
     "category": "Computer Science",
@@ -32,7 +32,7 @@
     "price": 269.99
   },
   {
-    "id": "64bff6d95c17073911a66fee",
+    "_id": "64bff6d95c17073911a66fee",
     "name": "Machine Learning",
     "img": "https://imageio.forbes.com/specials-images/dam/imageserve/966248982/960x0.jpg?height=456&width=711&fit=bounds",
     "category": "Computer Science",
@@ -46,5 +46,22 @@
     "in_week": 3,
     "rating": 9.6,
     "price": 509.09
+  },
+  {
+    "_id": "64bff6d95c17073911a66fd0",
+    "name": "Graphic Design",
+    "img": "https://assets-prd.ignimgs.com/2021/12/16/sale-309437-article-image-1639680628904.jpeg",
+    "category": "Arts",
+    "seats": 13,
+    "description": "Explores principles of visual communication and graphic design software.",
+    "full_description": "Unleash your creativity and embark on a visual journey with our comprehensive graphic design course. Designed to ignite your artistic talent and enhance your technical skills, this course offers an exceptional opportunity to explore the dynamic world of visual communication and design.Our graphic design course covers a wide range of topics, from the fundamentals of design principles and color theory to typography, layout, and digital tools. With a carefully crafted curriculum and experienced instructors, you will delve into the principles of composition, balance, contrast, and space, learning how to effectively communicate messages through visual mediums.Through a combination of theoretical instruction, hands-on projects, and industry-relevant exercises, you will gain practical experience in graphic design. You will learn how to use industry-standard software such as Adobe Creative Suite, honing your skills in digital illustration, image editing, and layout design. From creating eye-catching logos and brand identities to designing captivating print materials and engaging digital content, our course will equip you with the tools and knowledge to bring your creative visions to life.Our experienced instructors are seasoned professionals in the field of graphic design, with extensive industry experience and a passion for teaching. They will guide you through the creative process, offering personalized feedback and valuable insights to help you develop your own unique design style. You will have the opportunity to engage in collaborative projects, critique sessions, and discussions, fostering a supportive learning environment and encouraging the exchange of ideas. Beyond the technical skills, our graphic design course emphasizes the importance of conceptual thinking and visual storytelling. You will learn how to research, conceptualize, and execute design projects that effectively communicate messages, evoke emotions, and engage audiences. From understanding target demographics to crafting compelling narratives, you will develop a holistic approach to design that goes beyond aesthetics.The practical applications of graphic design are vast and varied. From advertising and marketing to web design, user experience, and multimedia, graphic design plays a crucial role in shaping the visual identity and communication of organizations and brands. By enrolling in our graphic design course, you will gain a competitive edge in the job market, as employers increasingly seek professionals who can create visually appealing and impactful designs.Moreover, our graphic design course fosters a creative community and provides opportunities for networking and professional growth. Through guest lectures, industry events, and portfolio reviews, you will have the chance to connect with established designers, expand your professional network, and gain insights into current trends and best practices in the industry.Whether you aspire to work as a graphic designer, start your own design business, or simply want to enhance your creative skills, our graphic design course will empower you to unlock your potential and pursue your passion. The skills acquired in this course are transferable to various fields and industries, opening doors to opportunities in advertising agencies, design studios, marketing departments, and more.Don't miss the opportunity to embark on a transformative journey through the realm of graphic design. Enroll in our course today and unlock your creative potential, master the tools of the trade, and cultivate a portfolio that showcases your unique style and abilities. Whether you are a beginner with a passion for design or an experienced artist looking to expand your skill set, our graphic design course will equip you with the knowledge, techniques, and confidence to create stunning visual experiences that leave a lasting impression.",
+    "course_length": 8,
+    "course_time": "1:00 pm to 4:00 pm",
+    "teacher": "Sophia Anderson",
+    "test": 24,
+    "in_week": 3,
+    "rating": 8.2,
+    "price": 180.8,
+    "studying": false
   }
 ]

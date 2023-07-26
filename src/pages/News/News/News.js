@@ -9,7 +9,10 @@ import { LiaPinterestP } from "react-icons/lia";
 import img from "../../../assets/latestnews/h3-img.jpeg";
 
 const News = () => {
+  // all state
   const [news, setNews] = useState([]);
+
+  // all effect
   useEffect(() => {
     fetch("latestnews.json")
       .then((res) => res.json())
