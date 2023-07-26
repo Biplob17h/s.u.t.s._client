@@ -19,7 +19,7 @@ const Events = () => {
       {/* banner */}
       <EventBanner></EventBanner>
       {/* banner */}
-      <div>
+      <div className="lg:grid lg:grid-cols-2 mx-5">
         {events.map(event=><EventDetails
         key={event.id}
         event={event}
@@ -27,7 +27,7 @@ const Events = () => {
         </EventDetails>)}
       </div>
       {/* event posts */}
-      <EventsPost></EventsPost>
+      {/* <EventsPost></EventsPost> */}
       {/* event posts */}
     </div>
   );

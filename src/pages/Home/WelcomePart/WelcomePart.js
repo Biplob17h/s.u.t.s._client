@@ -11,7 +11,7 @@ const WelcomePart = () => {
       .then((data) => setLatestNews(data));
   }, []);
   return (
-    <div className="flex lg:flex-row sm:flex-col my-20">
+    <div className="flex lg:flex-row flex-col my-20 mx-5">
       <div className=" pr-8">
         <h1 className="text-4xl font-bold">Welcome</h1>
         <p className="text-lg text-slate-500 font-medium py-5">

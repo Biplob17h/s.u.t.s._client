@@ -24,16 +24,16 @@ const Introduction = () => {
     }
 
     return (
-        <div className='flex py-20 bg-gray-100 lg:flex-row sm:flex-col-reverse'>
-            <div className='lg:w-1/2 sm:w-full'>
+        <div className='flex py-20 bg-gray-100 lg:flex-row flex-col-reverse gap-5'>
+            <div className='lg:w-1/2 w-full'>
             <div className=' flex flex-row justify-center'>
-                <button onClick={discription} className='flex items-center btn bg-gray-200  rounded-none border border-gray-400'><PiGraduationCap/>Description</button>
-                <button onClick={syllabus} className='flex items-center bg-gray-200 btn rounded-none border border-gray-400'><GoBookmark/>Syllabus</button>
-                <button onClick={teachers}className='flex items-center bg-gray-200 btn rounded-none border border-gray-400'><BsPeople/>Teachers</button>
+                <button onClick={discription} className='flex items-center btn lg:px-10 bg-gray-200  rounded-none border border-gray-400'><PiGraduationCap/>Description</button>
+                <button onClick={syllabus} className='flex items-center bg-gray-200 btn lg:px-10 rounded-none border border-gray-400'><GoBookmark/>Syllabus</button>
+                <button onClick={teachers}className='flex items-center bg-gray-200 btn lg:px-10 rounded-none border border-gray-400'><BsPeople/>Teachers</button>
             </div>
-            <p className='lg:mx-10 sm:mx-10 mt-3 slow'>{text}</p>
+            <p className='mx-10 mt-3 slow'>{text}</p>
             </div>
-            <img src={img} alt="" className='lg:w-1/2 sm:w-full'/>
+            <img src={img} alt="" className='lg:w-1/2 w-full'/>
         </div>
     );
 };

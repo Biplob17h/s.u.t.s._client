@@ -14,9 +14,9 @@ const EventDetails = ({ event }) => {
     attendee_count,
   } = event;
   return (
-    <div className="my-10">
+    <div className="my-10 mx-10">
       <div className="flex items-center space-between">
-        <h1 className="text-2xl font-semibold text-gray-500">{title}</h1>
+        <h1 className="text-2xl font-semibold">{title}</h1>
         <p className="text-sm font-medium px-7 py-3 bg-blue-900 text-white">
           {category}
         </p>
@@ -35,18 +35,18 @@ const EventDetails = ({ event }) => {
         <IoLocationSharp />
         {event_location}
       </p>
-      <p className="py-2 text-gray-500 text-sm font-medium">
+      {/* <p className="py-2 text-gray-500 text-sm font-medium">
         Attendee : {attendee_count}
-      </p>
-      <p className="flex text-sm font-medium text-gray-500">
+      </p> */}
+      {/* <p className="flex text-sm font-medium text-gray-500">
         Contact-Info :{" "}
         <div className="ml-1">
           <p> Name : {contact_info.name}</p>
           <p> Email : {contact_info.email}</p>
           <p> Phone : {contact_info.phone}</p>
         </div>
-      </p>
-      <img src={img} alt="" className="lg:w-1/2 mt-10 sm:w-full" />
+      </p> */}
+      <img src={img} alt="" className="mt-5 lg:max-w-xl lg:h-80" />
       <div className="divider"></div>
     </div>
   );
