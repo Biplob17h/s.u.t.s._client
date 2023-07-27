@@ -17,7 +17,7 @@ const Carousel = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     speed: 1500,
     autoplaySpeed: 4000,
     pauseOnHover: false,
@@ -62,7 +62,11 @@ const Carousel = () => {
           />
         </div>
         <div className="relative block text-white cusCarouselMotion">
-          <img className="absolute top-[24%] left-[42%]" src={logo} alt="" />
+          <img
+            className="absolute top-[24%] left-[28%] md:left-[42%]"
+            src={logo}
+            alt=""
+          />
           <h1 className="absolute top-[50%] left-[17%]  font-bold text-[27px] md:text-[60px]">
             Advanced Teaching Method
           </h1>
@@ -76,7 +80,11 @@ const Carousel = () => {
           />
         </div>
         <div className="relative block text-white cusCarouselMotion">
-          <img className="absolute top-[24%] left-[42%]" src={logo} alt="" />
+          <img
+            className="absolute top-[24%] left-[28%] md:left-[42%]"
+            src={logo}
+            alt=""
+          />
           <h1 className="absolute top-[50%] left-[17%]  font-bold text-[27px] md:text-[60px] md:left-[27%]">
             Build Career In Sports
           </h1>
@@ -90,7 +98,11 @@ const Carousel = () => {
           />
         </div>
         <div className="relative block text-white cusCarouselMotion">
-          <img className="absolute top-[24%] left-[42%]" src={logo} alt="" />
+          <img
+            className="absolute top-[24%] left-[28%] md:left-[42%]"
+            src={logo}
+            alt=""
+          />
           <h1 className="absolute top-[50%] left-[17%]  font-bold text-[27px] md:text-[60px] md:left-[29%]">
             Premium Scholarship
           </h1>
