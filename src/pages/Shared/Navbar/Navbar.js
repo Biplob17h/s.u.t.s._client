@@ -6,6 +6,7 @@ import Register from "../../Authentication/Register/Register";
 import Login from "../../Authentication/Login/Login";
 import { OrderContext } from "../../contextApi/HandleOrderContext";
 import { countSubTotal } from "../../components/CountSubTotal";
+import profileImg from '../../../assets/icons/profile.png'
 
 const Navbar = () => {
   // context api
@@ -141,7 +142,7 @@ const Navbar = () => {
                         className="btn btn-ghost btn-circle avatar">
                         <div className="w-10 rounded-full">
                           <img
-                            src="/images/stock/photo-1534528741775-53994a69daeb.jpg"
+                            src={profileImg}
                             alt=""
                           />
                         </div>
@@ -266,7 +267,7 @@ const Navbar = () => {
                 <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                   <div className="w-10 rounded-full">
                     <img
-                      src="/images/stock/photo-1534528741775-53994a69daeb.jpg"
+                      src={profileImg}
                       alt=""
                     />
                   </div>
