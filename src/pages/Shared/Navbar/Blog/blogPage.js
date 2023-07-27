@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { toast } from "react-hot-toast";
+import bannerbg from "../../../../assets/about/breadcrumb-img-1.jpeg"
+import "./blog.css";
 import { Link } from "react-router-dom";
 
 const Blog = () => {
@@ -25,15 +27,33 @@ const Blog = () => {
 
   return (
     <>
+     
+     <div
+        className="bg-cover mt-24 h-40 bg-center relative"
+        style={{ backgroundImage: `url(${bannerbg})` }}
+      >
+        <div className=" flex w-full h-full items-center justify-center res-teacherdetailsbanner">
+          <h1 className="text-2xl">Events</h1>
+          <p className=" text-slate-500">
+            <Link className=" hover:text-black" to="/">
+              Home
+            </Link>{" "}
+            / <Link>Events</Link>
+          </p>
+        </div>
+      </div>
+     
+
       <div className="blog mt-20">
         <div className="container">
           <div className="row flex gap-2">
+            {/* Main post */}
             <div className="col-md-9 ">
               {blogs?.map((p) => (
                 <div className=" w-full bg-base-100 shadow-xl">
                   <figure>
                     <img
-                      className=""
+                      className="post-img mx-auto"
                       width="1000"
                       height="530"
                       src={`http://localhost:8080/api/v1/blog/blog-photo/${p._id}`}
@@ -41,7 +61,7 @@ const Blog = () => {
                     />
                   </figure>
                   <div className="card-body">
-                    <h2 className="card-title font-semibold text-4xl">
+                    <h2 className="card-title hover:text-sky-700 opacity-80 font-semibold text-4xl">
                       {p.name}
                     </h2>
                     <p>July 11,2023</p>
@@ -54,7 +74,8 @@ const Blog = () => {
                           viewBox="0 0 24 24"
                           stroke-width="1.5"
                           stroke="currentColor"
-                          class="w-6 h-6">
+                          class="w-6 h-6"
+                        >
                           <path
                             stroke-linecap="round"
                             stroke-linejoin="round"
@@ -69,7 +90,8 @@ const Blog = () => {
                           viewBox="0 0 24 24"
                           strokeWidth={1.5}
                           stroke="currentColor"
-                          className="w-6 h-6">
+                          className="w-6 h-6"
+                        >
                           <path
                             strokeLinecap="round"
                             strokeLinejoin="round"
@@ -84,7 +106,8 @@ const Blog = () => {
                           viewBox="0 0 24 24"
                           strokeWidth={1.5}
                           stroke="currentColor"
-                          className="w-6 h-6">
+                          className="w-6 h-6"
+                        >
                           <path
                             strokeLinecap="round"
                             strokeLinejoin="round"
@@ -98,17 +121,20 @@ const Blog = () => {
                         </svg>
                       </a>
                     </div>
-                    <p>{p.description}</p>
+                    <p className="block lg:hidden opacity-70">{p.description.slice(0,200)}</p>
+                    <p className="hidden lg:block opacity-70">{p.description}</p>
                   </div>
                 </div>
               ))}
             </div>
 
-            <div className="col-md-3 w-full">
+                {/* side  bar */}
+            <div className="col-md-3 w-full ">
               <div className="popular-post">
                 <h1 className="text-xl font-bold">Popular Posts</h1>
-                <div className="div flex gap-1 mt-3">
+                <div className="single-popular">
                   <img
+                  className="single-img"
                     width="100"
                     height="90"
                     src="https://i.postimg.cc/3w0L3MMG/blog-featured-13.jpg"
@@ -116,8 +142,33 @@ const Blog = () => {
                   />
                   <div className="h3">Experiences Through Education</div>
                 </div>
+
+                <div className=" single-popular">
+                  <img
+                  className="single-img"
+                    width="100"
+                    height="90"
+                    src="https://i.postimg.cc/MG30ypRK/64ae8f313b73c5e2e2eb3e95.jpg"
+                    alt=""
+                  />
+                  <div className="h3">Building on Legacy of Excellence</div>
+                </div>
+
+                <div className=" single-popular">
+                  <img
+                  className="single-img"
+                    width="100"
+                    height="90"
+                    src="https://i.postimg.cc/tTV6Wtp2/64ae8ea83b73c5e2e2eb3e77.jpg"
+                    alt=""
+                  />
+                  <div className="h3">Building on Legacy of Excellence</div>
+                </div>
+
+                
               </div>
-              <div className="user-post mt-20 border-red-400 rounded">
+
+              {/* <div className="user-post mt-20 border-red-400 rounded">
                 <div className="text-xl font-semibold py-3">
                   Publish your passions, your way
                 </div>
@@ -131,8 +182,10 @@ const Blog = () => {
                     </button>
                   </Link>
                 </div>
-              </div>
+              </div> */}
+
             </div>
+
           </div>
         </div>
       </div>

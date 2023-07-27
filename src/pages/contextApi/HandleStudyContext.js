@@ -1,5 +1,4 @@
 import React, {
-  Children,
   createContext,
   useContext,
   useEffect,
@@ -15,8 +14,7 @@ const HandleStudyContext = ({ children }) => {
 
   // all state
   const [studies, setStudies] = useState([]);
-  const [studyNumber, setStudyNumber] = useState(0);
-  const rowStudies = [];
+  
 
   // all effect
   useEffect(() => {

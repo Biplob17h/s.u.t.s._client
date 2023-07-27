@@ -17,6 +17,7 @@
     "react-slick": "^0.29.0",
     "react-star-ratings": "^2.3.0",
     "react-use-window-size": "^1.0.1",
+    "sass": "^1.64.1",
     "slick-carousel": "^1.8.1",
     "split-type": "^0.3.3",
     "swiper": "^10.0.4",

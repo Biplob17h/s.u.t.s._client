@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import EventBanner from "../EventBanner/EventBanner";
-import EventsPost from "../EventsPost/EventsPost";
+// import EventsPost from "../EventsPost/EventsPost";
 import EventDetails from "../EventDetails/EventDetails";
 
 

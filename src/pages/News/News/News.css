@@ -1,0 +1,16 @@
+@media (max-width:480px) {
+    .post-img{
+        width: 300px;
+        height: 170px;
+        object-fit: cover;
+    }
+    .title{
+        font-size:22px;
+        line-height: 25px;
+    }
+    .single-img{
+        width: 90px;
+        height: 70px;
+        object-fit: cover;
+    }
+}
