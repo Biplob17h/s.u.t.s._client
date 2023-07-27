@@ -4,6 +4,7 @@ import teacherImg from "../../../assets/about/teachers-1.jpeg";
 import "../About.css";
 import { Link } from "react-router-dom";
 import TeacherDetailsSingle from "../TeacherDetails/TeacherDetailsSingle";
+import TeacherDetailsBanner from "../TeacherDetails/TeacherDetailsBanner";
 const Teachers = () => {
   const [teachersInfo, setTeachersInfo] = useState([]);
 
@@ -14,7 +15,8 @@ const Teachers = () => {
   }, []);
   return (
     <div className="mt-20">
-      <div className="flex res-teacher">
+      <TeacherDetailsBanner></TeacherDetailsBanner>
+      <Link to="/about/teachers" className="flex res-teacher">
         <img src={teacherImg} alt="" className="" />
         <div className="pt-8  res-signature">
           <h1 className="text-4xl font-bold">Joseph White</h1>
@@ -30,13 +32,12 @@ const Teachers = () => {
           </p>
           <img src={signature} alt="" className="pt-5" />
         </div>
-      </div>
+      </Link>
       <div className=" grid my-16 res-teacher-card">
         {teachersInfo.map((teachers) => (
           <TeacherDetailsSingle
-          key={teachers.id}
-          teachers={teachers}
-          ></TeacherDetailsSingle>
+            key={teachers.id}
+            teachers={teachers}></TeacherDetailsSingle>
         ))}
       </div>
     </div>

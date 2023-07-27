@@ -281,7 +281,7 @@ const Navbar = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link>Settings</Link>
+                    <Link to=''>Settings</Link>
                   </li>
                   <li>
                     <Link onClick={handleLogOut}>Logout</Link>

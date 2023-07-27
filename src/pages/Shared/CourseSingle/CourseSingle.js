@@ -38,7 +38,7 @@ const CourseSingle = () => {
       .then((data) => {
         data.forEach((s) => {
           s?.studies.forEach((c) => {
-            if (course?.name === c?.course?.name) {
+            if (c?.course?.name !== course?.name) {
               setStduy(true);
             } else {
               setStduy(false);
@@ -47,7 +47,6 @@ const CourseSingle = () => {
         });
       });
   });
-  
 
   // function
   const handleAddToCart = () => {
@@ -75,8 +74,6 @@ const CourseSingle = () => {
         setBought();
       });
   };
-
-  const handleDropOut = () => {};
 
   const testOnClicked = () => {
     console.log("btn clicked");

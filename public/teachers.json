@@ -7,21 +7,21 @@
         "about": "Ms. Emily Johnson is a dedicated mathematics teacher with a passion for helping students succeed. With her Bachelor of Science degree (BSc) in Mathematics and Master of Education (MEd) in Curriculum and Instruction, she has a strong foundation in both subject matter expertise and effective teaching practices. Ms. Johnson employs various instructional strategies to engage students and foster their mathematical understanding. She believes in creating a supportive and inclusive classroom environment that encourages students to ask questions, collaborate, and develop critical thinking skills. With her enthusiasm for the subject and commitment to student growth, Ms. Emily Johnson strives to make mathematics accessible and enjoyable for all her students.",
         "signature": "Ms. Emily Johnson, BSc, MEd",
         "education":{
-            "1":"Bachelor of Science in Mathematics - XYZ University",
-            "2":"Master of Education in Curriculum and Instruction - ABC College"
+            "e1":"Bachelor of Science in Mathematics - XYZ University",
+            "e2":"Master of Education in Curriculum and Instruction - ABC College"
         },
         "experience":{
-            "1":"Mathematics Teacher, XYZ High School (5 years)",
-            "2":"Mathematics Department Head, ABC Middle School (3 years)",
-            "3":"Tutor, Math Success Center (2 years)"
+            "ex1":"Mathematics Teacher, XYZ High School (5 years)",
+            "ex2":"Mathematics Department Head, ABC Middle School (3 years)",
+            "ex3":"Tutor, Math Success Center (2 years)"
         },
         "skills":{
-            "1":"Strong knowledge of mathematical concepts and theories",
-            "2":"Ability to create engaging lesson plans and activities",
-            "3":"Strong classroom management skills"
+            "s1":"Strong knowledge of mathematical concepts and theories",
+            "s2":"Ability to create engaging lesson plans and activities",
+            "s3":"Strong classroom management skills"
         },
         "certificates":75,
-        "education_skills":95
+        "education_skills":91
     },
 
 
@@ -33,21 +33,21 @@
         "about": "Mr. David Thompson is a passionate and experienced English Language Arts teacher dedicated to nurturing students' literacy skills and love for literature. With his Bachelor of Arts degree (BA) in English and Master of Arts (MA) in Education, he brings a deep understanding of language arts instruction. Mr. Thompson designs engaging lessons that help students develop their reading, writing, and critical analysis abilities. He encourages active participation and fosters a classroom culture that values creativity and open-mindedness. Mr. David Thompson's goal is to empower students to become confident communicators and lifelong learners in the realm of language and literature.",
         "signature": "Mr. David Thompson, BA, MA",
         "education":{
-            "1":"Bachelor of Science in Mathematics - XYZ University",
-            "2":"Master of Education in Curriculum and Instruction - ABC College"
+            "e1":"Bachelor of Science in Mathematics - XYZ University",
+            "e2":"Master of Education in Curriculum and Instruction - ABC College"
         },
         "experience":{
-            "1":"Mathematics Teacher, XYZ High School (5 years)",
-            "2":"Mathematics Department Head, ABC Middle School (3 years)",
-            "3":"Tutor, Math Success Center (2 years)"
+            "ex1":"Mathematics Teacher, XYZ High School (5 years)",
+            "ex2":"Mathematics Department Head, ABC Middle School (3 years)",
+            "ex3":"Tutor, Math Success Center (2 years)"
         },
         "skills":{
-            "1":"Strong knowledge of mathematical concepts and theories",
-            "2":"Ability to create engaging lesson plans and activities",
-            "3":"Strong classroom management skills"
+            "s1":"Strong knowledge of mathematical concepts and theories",
+            "s2":"Ability to create engaging lesson plans and activities",
+            "s3":"Strong classroom management skills"
         },
-        "certificates":75,
-        "education_skills":95},
+        "certificates":87,
+        "education_skills":90},
 
 
     {"id":"3",
@@ -58,21 +58,21 @@
         "about": "Mrs. Sarah Davis is a dedicated science teacher with a strong passion for inspiring students to explore and understand the wonders of the natural world. With her Bachelor of Science degree (BSc) in Biology and Doctorate (PhD) in Environmental Science, she possesses a solid foundation in scientific knowledge and research. Mrs. Davis fosters a hands-on learning environment, engaging students in experiments, investigations, and scientific inquiry. She believes in making science accessible and relevant to students' lives, connecting classroom concepts to real-world applications. Mrs. Sarah Davis's enthusiasm for science and her commitment to student success create an exciting and enriching learning experience for her students.",
         "signature": "Mrs. Sarah Davis, BSc, PhD",
         "education":{
-            "1":"Bachelor of Science in Mathematics - XYZ University",
-            "2":"Master of Education in Curriculum and Instruction - ABC College"
+            "e1":"Bachelor of Science in Mathematics - XYZ University",
+            "e2":"Master of Education in Curriculum and Instruction - ABC College"
         },
         "experience":{
-            "1":"Mathematics Teacher, XYZ High School (5 years)",
-            "2":"Mathematics Department Head, ABC Middle School (3 years)",
-            "3":"Tutor, Math Success Center (2 years)"
+            "ex1":"Mathematics Teacher, XYZ High School (5 years)",
+            "ex2":"Mathematics Department Head, ABC Middle School (3 years)",
+            "ex3":"Tutor, Math Success Center (2 years)"
         },
         "skills":{
-            "1":"Strong knowledge of mathematical concepts and theories",
-            "2":"Ability to create engaging lesson plans and activities",
-            "3":"Strong classroom management skills"
+            "s1":"Strong knowledge of mathematical concepts and theories",
+            "s2":"Ability to create engaging lesson plans and activities",
+            "s3":"Strong classroom management skills"
         },
-        "certificates":75,
-        "education_skills":95
+        "certificates":77,
+        "education_skills":89
     },
     {"id":"4",
         "name": "Dr. Michael Roberts",
@@ -82,21 +82,21 @@
         "about": "Dr. Michael Roberts is a highly skilled cardiothoracic surgeon dedicated to providing exceptional care for patients with heart and lung conditions. With his medical degree (MD) and Fellowship of the American College of Surgeons (FACS), he has undergone rigorous training in complex surgical procedures and patient management. Dr. Roberts specializes in cardiac and thoracic surgeries, including coronary artery bypass grafting, valve repair/replacement, and lung resections. He stays abreast of the latest advancements in his field to offer cutting-edge treatment options to his patients. Dr. Roberts is known for his surgical expertise, compassionate bedside manner, and commitment to personalized care. His goal is to improve the quality of life for his patients through innovative surgical interventions and comprehensive follow-up care.",
         "signature": "Dr. Michael Roberts, MD, FACS",
         "education":{
-            "1":"Bachelor of Science in Mathematics - XYZ University",
-            "2":"Master of Education in Curriculum and Instruction - ABC College"
+            "e1":"Bachelor of Science in Mathematics - XYZ University",
+            "e2":"Master of Education in Curriculum and Instruction - ABC College"
         },
         "experience":{
-            "1":"Mathematics Teacher, XYZ High School (5 years)",
-            "2":"Mathematics Department Head, ABC Middle School (3 years)",
-            "3":"Tutor, Math Success Center (2 years)"
+            "ex1":"Mathematics Teacher, XYZ High School (5 years)",
+            "ex2":"Mathematics Department Head, ABC Middle School (3 years)",
+            "ex3":"Tutor, Math Success Center (2 years)"
         },
         "skills":{
-            "1":"Strong knowledge of mathematical concepts and theories",
-            "2":"Ability to create engaging lesson plans and activities",
-            "3":"Strong classroom management skills"
+            "s1":"Strong knowledge of mathematical concepts and theories",
+            "s2":"Ability to create engaging lesson plans and activities",
+            "s3":"Strong classroom management skills"
         },
-        "certificates":75,
-        "education_skills":95},
+        "certificates":89,
+        "education_skills":77},
 
 
     {"id":"5",
@@ -107,20 +107,20 @@
         "about": "Dr. Jennifer Ramirez is a compassionate and experienced obstetrician-gynecologist committed to providing comprehensive women's healthcare services. With her medical degree (MD) and Fellowship of the American College of Obstetricians and Gynecologists (FACOG), she has acquired specialized knowledge in women's reproductive health and childbirth. Dr. Ramirez offers a range of services, including prenatal care, gynecological exams, family planning, and minimally invasive surgeries. She believes in empowering women to make informed decisions about their health and takes a patient-centered approach in her practice. Dr. Ramirez provides personalized care, emphasizing open communication and building strong doctor-patient",
         "signature": "Dr. Michael Roberts, MD, FACS",
         "education":{
-            "1":"Bachelor of Science in Mathematics - XYZ University",
-            "2":"Master of Education in Curriculum and Instruction - ABC College"
+            "e1":"Bachelor of Science in Mathematics - XYZ University",
+            "e2":"Master of Education in Curriculum and Instruction - ABC College"
         },
         "experience":{
-            "1":"Mathematics Teacher, XYZ High School (5 years)",
-            "2":"Mathematics Department Head, ABC Middle School (3 years)",
-            "3":"Tutor, Math Success Center (2 years)"
+            "ex1":"Mathematics Teacher, XYZ High School (5 years)",
+            "ex2":"Mathematics Department Head, ABC Middle School (3 years)",
+            "ex3":"Tutor, Math Success Center (2 years)"
         },
         "skills":{
-            "1":"Strong knowledge of mathematical concepts and theories",
-            "2":"Ability to create engaging lesson plans and activities",
-            "3":"Strong classroom management skills"
+            "s1":"Strong knowledge of mathematical concepts and theories",
+            "s2":"Ability to create engaging lesson plans and activities",
+            "s3":"Strong classroom management skills"
         },
-        "certificates":75,
+        "certificates":93,
         "education_skills":95},
     {"id":"6",
         "name": "Ms. Jennifer Thompson",
@@ -130,21 +130,21 @@
         "about": "Ms. Jennifer Thompson is a passionate history teacher with a deep knowledge and love for the subject. With her Bachelor of Arts degree (BA) in History and Master of Arts (MA) in Education, she brings a comprehensive understanding of historical events and their significance. Ms. Thompson utilizes interactive teaching methods to engage students and promote critical thinking skills. She fosters a classroom environment that encourages open discussion, inquiry, and the exploration of different perspectives. Ms. Jennifer Thompson's goal is to inspire a lifelong appreciation for history in her students, helping them understand the past and its impact on the present.",
         "signature": "Ms. Jennifer Thompson, BA, MA",
         "education":{
-            "1":"Bachelor of Science in Mathematics - XYZ University",
-            "2":"Master of Education in Curriculum and Instruction - ABC College"
+            "e1":"Bachelor of Science in Mathematics - XYZ University",
+            "e2":"Master of Education in Curriculum and Instruction - ABC College"
         },
         "experience":{
-            "1":"Mathematics Teacher, XYZ High School (5 years)",
-            "2":"Mathematics Department Head, ABC Middle School (3 years)",
-            "3":"Tutor, Math Success Center (2 years)"
+            "ex1":"Mathematics Teacher, XYZ High School (5 years)",
+            "ex2":"Mathematics Department Head, ABC Middle School (3 years)",
+            "ex3":"Tutor, Math Success Center (2 years)"
         },
         "skills":{
-            "1":"Strong knowledge of mathematical concepts and theories",
-            "2":"Ability to create engaging lesson plans and activities",
-            "3":"Strong classroom management skills"
+            "s1":"Strong knowledge of mathematical concepts and theories",
+            "s2":"Ability to create engaging lesson plans and activities",
+            "s3":"Strong classroom management skills"
         },
-        "certificates":75,
-        "education_skills":95},
+        "certificates":96,
+        "education_skills":75},
 
 
     {"id":"7",
@@ -155,21 +155,21 @@
         "about": "Mr. Robert Davis is a dedicated physical education teacher committed to promoting fitness, health, and overall well-being in his students. With his Bachelor of Science degree (BS) in Kinesiology and Master of Education (MEd) in Physical Education, he combines his passion for sports with evidence-based teaching strategies. Mr. Davis creates a supportive and inclusive environment where students can engage in various physical activities, learn sportsmanship, and develop lifelong healthy habits. He emphasizes the importance of teamwork, discipline, and personal growth through physical education. Mr. Robert Davis's goal is to empower students to lead active lifestyles and instill in them a lifelong love for physical fitness.",
         "signature": "Mr. Robert Davis, BS, MEd",
         "education":{
-            "1":"Bachelor of Science in Mathematics - XYZ University",
-            "2":"Master of Education in Curriculum and Instruction - ABC College"
+            "e1":"Bachelor of Science in Mathematics - XYZ University",
+            "e2":"Master of Education in Curriculum and Instruction - ABC College"
         },
         "experience":{
-            "1":"Mathematics Teacher, XYZ High School (5 years)",
-            "2":"Mathematics Department Head, ABC Middle School (3 years)",
-            "3":"Tutor, Math Success Center (2 years)"
+            "ex1":"Mathematics Teacher, XYZ High School (5 years)",
+            "ex2":"Mathematics Department Head, ABC Middle School (3 years)",
+            "ex3":"Tutor, Math Success Center (2 years)"
         },
         "skills":{
-            "1":"Strong knowledge of mathematical concepts and theories",
-            "2":"Ability to create engaging lesson plans and activities",
-            "3":"Strong classroom management skills"
+            "s1":"Strong knowledge of mathematical concepts and theories",
+            "s2":"Ability to create engaging lesson plans and activities",
+            "s3":"Strong classroom management skills"
         },
-        "certificates":75,
-        "education_skills":95},
+        "certificates":76,
+        "education_skills":98},
 
 
     {"id":"8",
@@ -180,19 +180,19 @@
         "about": "Mrs. Emily Wilson is a highly knowledgeable and passionate English literature teacher dedicated to nurturing a love for literature and critical analysis in her students. With her Bachelor of Arts degree (BA), Master of Arts (MA), and Doctorate (PhD) in English Literature, she brings extensive expertise and a deep appreciation for literary works. Mrs. Wilson creates a dynamic learning environment where students explore various genres, analyze literary themes, and develop strong writing skills. She encourages lively discussions, creative interpretations, and personal connections to literature. Mrs. Emily Wilson's aim is to foster a lifelong love for reading and a deeper understanding of the power of language and storytelling.",
         "signature": "Mrs. Emily Wilson, BA, MA, PhD",
         "education":{
-            "1":"Bachelor of Science in Mathematics - XYZ University",
-            "2":"Master of Education in Curriculum and Instruction - ABC College"
+            "e1":"Bachelor of Science in Mathematics - XYZ University",
+            "e2":"Master of Education in Curriculum and Instruction - ABC College"
         },
         "experience":{
-            "1":"Mathematics Teacher, XYZ High School (5 years)",
-            "2":"Mathematics Department Head, ABC Middle School (3 years)",
-            "3":"Tutor, Math Success Center (2 years)"
+            "ex1":"Mathematics Teacher, XYZ High School (5 years)",
+            "ex2":"Mathematics Department Head, ABC Middle School (3 years)",
+            "ex3":"Tutor, Math Success Center (2 years)"
         },
         "skills":{
-            "1":"Strong knowledge of mathematical concepts and theories",
-            "2":"Ability to create engaging lesson plans and activities",
-            "3":"Strong classroom management skills"
+            "s1":"Strong knowledge of mathematical concepts and theories",
+            "s2":"Ability to create engaging lesson plans and activities",
+            "s3":"Strong classroom management skills"
         },
-        "certificates":75,
+        "certificates":95,
         "education_skills":95}
 ]

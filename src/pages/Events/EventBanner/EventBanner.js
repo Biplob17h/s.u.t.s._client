@@ -5,17 +5,16 @@ import { Link } from "react-router-dom";
 
 const EventBanner = () => {
     return (
-        <div
-        className="bg-cover mt-24 h-40 bg-center relative"
-        style={{ backgroundImage: `url(${bannerbg})` }}
-      >
-        <div className=" flex w-full h-full items-center justify-center res-teacherdetailsbanner">
+      <div
+        className="bg-cover mt-24 h-40 bg-center relative "
+        style={{ backgroundImage: `url(${bannerbg})` }}>
+        <div className=" flex w-full h-full items-center justify-center res-teacherdetailsbanner text-[18px]">
           <h1 className="text-2xl">Events</h1>
           <p className=" text-slate-500">
             <Link className=" hover:text-black" to="/">
               Home
             </Link>{" "}
-            / <Link>Events</Link>
+            / <Link className="text-[#2d76b2]">Events</Link>
           </p>
         </div>
       </div>
