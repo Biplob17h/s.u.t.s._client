@@ -6,7 +6,7 @@ const Events = () => {
     <div className="text-center py-10">
       <h1 className="text-[40px] font-serif font-semibold text-slate-700">Newest Events</h1>
       <p className=" text-slate-500 text-lg py-6">Etiam porttitor risus massa nec condiment gravida nibh vel velit auctor aliquetnean sollicitudin, lorem <br /> quis bibendum auci elit consequat</p>
-      <div className="flex gap-6 sm:flex-col md:flex-row md:flex-wrap">
+      <div className="flex gap-6 flex-col lg:flex-row">
         <div className="card w-96 bg-base-100 shadow-xl rounded-none flex-auto md:grow-0">
           <figure className="relative parent">
             <img

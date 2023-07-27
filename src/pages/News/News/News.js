@@ -35,7 +35,7 @@ const News = () => {
         </div>
       </div>
       <div className="lg:flex">
-        <div className="lg:w-3/4">
+        <div className="lg:w-3/4 mx-10">
           {news.map((latestNews) => (
             <div className="my-20">
               <img src={latestNews.image} alt="" className="w-3/4" />

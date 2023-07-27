@@ -13,7 +13,7 @@ const Teachers = () => {
       .then((data) => setTeachersInfo(data));
   }, []);
   return (
-    <div>
+    <div className="mt-20">
       <div className="flex res-teacher">
         <img src={teacherImg} alt="" className="" />
         <div className="pt-8  res-signature">
