@@ -6,7 +6,8 @@ import Register from "../../Authentication/Register/Register";
 import Login from "../../Authentication/Login/Login";
 import { OrderContext } from "../../contextApi/HandleOrderContext";
 import { countSubTotal } from "../../components/CountSubTotal";
-import profileImg from '../../../assets/icons/profile.png'
+import profileImg from "../../../assets/icons/profile.png";
+import { ScrollToTop } from "../../components/ScrollToTop";
 
 const Navbar = () => {
   // context api
@@ -44,11 +45,11 @@ const Navbar = () => {
   // test
   const handleNav = () => {
     console.log("clicked");
-    const orr = []
-    order.forEach(element => {
-      orr.push(element.course)
+    const orr = [];
+    order.forEach((element) => {
+      orr.push(element.course);
     });
-    console.log(orr)
+    console.log(orr);
   };
 
   // on click logout
@@ -68,9 +69,10 @@ const Navbar = () => {
     setNav(window.scrollY);
   };
 
+  const handleNavScroll = () => {
+    ScrollToTop();
+  };
   // count total
-
-  
 
   const subTotal = countSubTotal(order);
 
@@ -141,10 +143,7 @@ const Navbar = () => {
                         tabIndex={0}
                         className="btn btn-ghost btn-circle avatar">
                         <div className="w-10 rounded-full">
-                          <img
-                            src={profileImg}
-                            alt=""
-                          />
+                          <img src={profileImg} alt="" />
                         </div>
                       </label>
                     </Link>
@@ -154,32 +153,48 @@ const Navbar = () => {
                 <></>
               )}
               <li>
-                <Link to="/">Home</Link>
+                <Link onClick={handleNavScroll} to="/">
+                  Home
+                </Link>
               </li>
               <li>
-                <Link to="/shop">Courses</Link>
+                <Link onClick={handleNavScroll} to="/shop">
+                  Courses
+                </Link>
               </li>
               <li>
-                <Link to="/events">Events</Link>
+                <Link onClick={handleNavScroll} to="/events">
+                  Events
+                </Link>
               </li>
               <li>
-                <Link to="/blog">Blog</Link>
+                <Link onClick={handleNavScroll} to="/blog">
+                  Blog
+                </Link>
               </li>
               <li>
-                <Link to="/about">About Us</Link>
+                <Link onClick={handleNavScroll} to="/about">
+                  About Us
+                </Link>
               </li>
               <li>
-                <Link to="/news">News</Link>
+                <Link onClick={handleNavScroll} to="/news">
+                  News
+                </Link>
               </li>
               {user ? (
                 <></>
               ) : (
                 <>
                   <li>
-                    <Link to="/register">Register</Link>
+                    <Link>
+                      Register
+                    </Link>
                   </li>
                   <li>
-                    <Link to="/login">Login</Link>
+                    <Link>
+                      Login
+                    </Link>
                   </li>
                 </>
               )}
@@ -212,7 +227,9 @@ const Navbar = () => {
           <Link to="/shop" className="btn btn-ghost hover:text-[#0693e3]">
             Courses
           </Link>
-          <Link className="btn btn-ghost hover:text-[#0693e3]" to='/events'>Events</Link>
+          <Link className="btn btn-ghost hover:text-[#0693e3]" to="/events">
+            Events
+          </Link>
           <Link to="/blog" className="btn btn-ghost hover:text-[#0693e3]">
             Blog
           </Link>
@@ -266,10 +283,7 @@ const Navbar = () => {
               <div className="dropdown dropdown-end">
                 <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                   <div className="w-10 rounded-full">
-                    <img
-                      src={profileImg}
-                      alt=""
-                    />
+                    <img src={profileImg} alt="" />
                   </div>
                 </label>
                 <ul
@@ -281,7 +295,7 @@ const Navbar = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link to=''>Settings</Link>
+                    <Link to="">Settings</Link>
                   </li>
                   <li>
                     <Link onClick={handleLogOut}>Logout</Link>
