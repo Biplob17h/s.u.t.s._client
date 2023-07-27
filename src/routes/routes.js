@@ -14,6 +14,8 @@ import Confirm from "../pages/cart/Confirm/Confirm";
 import ProfileLayout from "../layout/ProfileLayout";
 import Profile from "../pages/Profile/Profile";
 import TeacherSingle from "../pages/About/TeacherDetails/TeacherSingle";
+import Register from "../pages/Authentication/Register/Register";
+import Login from "../pages/Authentication/Login/Login";
 
 export const routes = createBrowserRouter([
   {
@@ -51,6 +53,14 @@ export const routes = createBrowserRouter([
       {
         path: "/blog-form",
         element: <BlogForm></BlogForm>,
+      },
+      {
+        path: "/register",
+        element: <Register></Register>
+      },
+      {
+        path: "/login",
+        element: <Login></Login>
       },
       {
         path: "/course/single/:id",
