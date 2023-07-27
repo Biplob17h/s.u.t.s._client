@@ -10,6 +10,8 @@ import TeacherDetails from "../pages/About/TeacherDetails/TeacherDetails";
 import News from "../pages/News/News/News";
 import Cart from "../pages/cart/Cart";
 import Confirm from "../pages/cart/Confirm/Confirm";
+import ProfileLayout from "../layout/ProfileLayout";
+import Profile from "../pages/Profile/Profile";
 
 export const routes = createBrowserRouter([
   {
@@ -60,4 +62,15 @@ export const routes = createBrowserRouter([
       },
     ],
   },
+  {
+    path : '/profile',
+    element : <ProfileLayout></ProfileLayout>,
+    children : [
+      {
+        path : "/profile/main",
+        element : <Profile></Profile>
+      }
+    ]
+
+  }
 ]);

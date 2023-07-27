@@ -106,7 +106,7 @@ const Navbar = () => {
                 <>
                   <li className="flex flex-row justify-between">
                     {/* cart for small  device*/}
-                    <Link to='/cart'>
+                    <Link to="/cart">
                       <button className="btn">
                         <div className="dropdown dropdown-end">
                           <label
@@ -135,7 +135,7 @@ const Navbar = () => {
                       </button>
                     </Link>
                     {/* profile for small  device*/}
-                    <button className="btn">
+                    <Link to="/profile/main" className="btn">
                       <label
                         tabIndex={0}
                         className="btn btn-ghost btn-circle avatar">
@@ -146,7 +146,7 @@ const Navbar = () => {
                           />
                         </div>
                       </label>
-                    </button>
+                    </Link>
                   </li>
                 </>
               ) : (
@@ -254,7 +254,7 @@ const Navbar = () => {
                     </span>
                     <span className="text-info">Subtotal: {subTotal}$</span>
                     <div className="card-actions">
-                      <Link to='/cart' className="btn btn-primary btn-block">
+                      <Link to="/cart" className="btn btn-primary btn-block">
                         View cart
                       </Link>
                     </div>
@@ -275,7 +275,9 @@ const Navbar = () => {
                   tabIndex={0}
                   className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                   <li>
-                    <Link className="justify-between">Profile</Link>
+                    <Link to="/profile/main" className="justify-between">
+                      Profile
+                    </Link>
                   </li>
                   <li>
                     <Link>Settings</Link>
