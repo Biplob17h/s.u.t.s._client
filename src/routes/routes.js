@@ -13,6 +13,7 @@ import Cart from "../pages/cart/Cart";
 import Confirm from "../pages/cart/Confirm/Confirm";
 import ProfileLayout from "../layout/ProfileLayout";
 import Profile from "../pages/Profile/Profile";
+import TeacherSingle from "../pages/About/TeacherDetails/TeacherSingle";
 
 export const routes = createBrowserRouter([
   {
@@ -32,20 +33,20 @@ export const routes = createBrowserRouter([
         element: <Blog></Blog>,
       },
       {
-        path:'/about',
-        element:<About></About>
-      },   
+        path: "/about",
+        element: <About></About>,
+      },
       {
         path: "/news",
         element: <News></News>,
       },
       {
-        path:'/about/teachers',
-        element:<TeacherDetails></TeacherDetails>
+        path: "/about/teachers",
+        element: <TeacherDetails></TeacherDetails>,
       },
       {
-        path:'events',
-        element:<Events></Events>
+        path: "events",
+        element: <Events></Events>,
       },
       {
         path: "/blog-form",
@@ -65,17 +66,21 @@ export const routes = createBrowserRouter([
         path: "/confirm",
         element: <Confirm></Confirm>,
       },
+      {
+        path: "/about/teachers/:id",
+        element: <TeacherSingle></TeacherSingle>,
+        loader: (params) => fetch(`teachers.json`),
+      },
     ],
   },
   {
-    path : '/profile',
-    element : <ProfileLayout></ProfileLayout>,
-    children : [
+    path: "/profile",
+    element: <ProfileLayout></ProfileLayout>,
+    children: [
       {
-        path : "/profile/main",
-        element : <Profile></Profile>
-      }
-    ]
-
-  }
+        path: "/profile/main",
+        element: <Profile></Profile>,
+      },
+    ],
+  },
 ]);
