@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2dba1dc0.css",
+    "main.js": "/static/js/main.ed4a5e95.js",
+    "static/js/787.dc88d5c7.chunk.js": "/static/js/787.dc88d5c7.chunk.js",
+    "static/media/Screenshot 2023-07-11 155853.png": "/static/media/Screenshot 2023-07-11 155853.726ce57aa3040b34a430.png",
+    "static/media/front-university.jpg": "/static/media/front-university.4d9ca64d8d0c05cdcaa6.jpg",
+    "static/media/blog-featured-1-1-550x550.jpeg": "/static/media/blog-featured-1-1-550x550.96b1630ef9424e97ab74.jpeg",
+    "static/media/suts-logo.png": "/static/media/suts-logo.8a7689df67a2c56aaa23.png",
+    "static/media/h3-img.jpeg": "/static/media/h3-img.8c27b13f35e2044d395d.jpeg",
+    "static/media/h3-footer-image.jpg": "/static/media/h3-footer-image.7938444d401c33ddf4af.jpg",
+    "static/media/teachers-1.jpeg": "/static/media/teachers-1.5e3d25e3b8338df12917.jpeg",
+    "static/media/breadcrumb-img-1.jpeg": "/static/media/breadcrumb-img-1.39ab660a3c8f00b25518.jpeg",
+    "static/media/shop.png": "/static/media/shop.39ab660a3c8f00b25518.png",
+    "static/media/profile.png": "/static/media/profile.5faf09a7795d28bf5a2b.png",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/index.html",
+    "main.2dba1dc0.css.map": "/static/css/main.2dba1dc0.css.map",
+    "main.ed4a5e95.js.map": "/static/js/main.ed4a5e95.js.map",
+    "787.dc88d5c7.chunk.js.map": "/static/js/787.dc88d5c7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2dba1dc0.css",
+    "static/js/main.ed4a5e95.js"
+  ]
+}

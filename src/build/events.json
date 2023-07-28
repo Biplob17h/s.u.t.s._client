@@ -1,0 +1,288 @@
+[
+    {
+      "id": "event_1",
+      "title": "University Open Day",
+      "full_description": "Discover what our university has to offer by attending the Open Day. Explore campus, meet faculty, and learn about programs.",
+      "event_time": "2023-08-12 10:00:00",
+      "img": "https://images.squarespace-cdn.com/content/v1/56e6109437013b50c08d8e3c/1580882867517-WB5CAX9EPCHOVBH2VQ0G/three+students+in+yellow+hold+up+a+placard+for+newcastle+university+memorable+open+day",
+      "event_location": "University Campus",
+      "category": "Open Day",
+      "organizers": ["Office of Admissions"],
+      "contact_info": {
+        "name": "Ms. Sarah Johnson",
+        "email": "sarah.johnson@example.com",
+        "phone": "+1 (123) 456-7890"
+      },
+      "registration_required": false,
+      "registration_link": "",
+      "attendee_count": 250,
+      "event_website": "https://www.exampleuniversity.edu/openday"
+    },
+    {
+      "id": "event_2",
+      "title": "Annual Science Fair",
+      "full_description": "Join us for the Annual Science Fair showcasing innovative projects from students across various scientific disciplines.",
+      "event_time": "2023-09-15 10:00:00",
+      "img": "https://img.freepik.com/free-vector/grand-science-fair-square-flyer_23-2148617122.jpg?w=2000",
+      "event_location": "University Campus, Main Auditorium",
+      "category": "Exhibition",
+      "organizers": ["Faculty of Science", "Student Science Club"],
+      "contact_info": {
+        "name": "Prof. Jane Smith",
+        "email": "jane.smith@example.com",
+        "phone": "+1 (987) 654-3210"
+      },
+      "registration_required": true,
+      "registration_link": "https://www.exampleuniversity.edu/sciencefair/register",
+      "attendee_count": 500,
+      "event_website": "https://www.exampleuniversity.edu/sciencefair"
+    },
+    {
+      "id": "event_3",
+      "title": "International Food Festival",
+      "full_description": "Experience a culinary journey around the world with a diverse array of delicious dishes at our International Food Festival.",
+      "event_time": "2023-11-05 18:30:00",
+      "img": "https://www.ousa.org.nz/files/1675137521313.jpg",
+      "event_location": "University Campus, Outdoor Plaza",
+      "category": "Cultural Festival",
+      "organizers": ["Office of International Affairs", "Student Cultural Club"],
+      "contact_info": {
+        "name": "Dr. Michael Johnson",
+        "email": "michael.johnson@example.com",
+        "phone": "+1 (555) 123-4567"
+      },
+      "registration_required": false,
+      "registration_link": "",
+      "attendee_count": 350,
+      "event_website": "https://www.exampleuniversity.edu/foodfestival"
+    },
+    {
+      "id": "event_4",
+      "title": "Career Fair 2023",
+      "full_description": "Connect with top employers, explore job opportunities, and network with industry professionals at the Career Fair 2023.",
+      "event_time": "2023-10-20 11:00:00",
+      "img": "https://sa.hkbu.edu.hk/portal/career/careerfair/2023/img/cover.jpg",
+      "event_location": "University Campus, Conference Hall",
+      "category": "Career Development",
+      "organizers": ["Career Services Department"],
+      "contact_info": {
+        "name": "Ms. Emily Davis",
+        "email": "emily.davis@example.com",
+        "phone": "+1 (555) 987-6543"
+      },
+      "registration_required": true,
+      "registration_link": "https://www.exampleuniversity.edu/careerfair/register",
+      "attendee_count": 800,
+      "event_website": "https://www.exampleuniversity.edu/careerfair"
+    },
+    {
+      "id": "event_5",
+      "title": "Student Orientation Week",
+      "full_description": "Welcome to all new students! Join us for a fun-filled orientation week to get acquainted with campus life and make new friends.",
+      "event_time": "2023-09-01 09:00:00",
+      "img": "https://www.xula.edu/events/2022/06/save-the-date-new-student-orienta.jpg",
+      "event_location": "University Campus",
+      "category": "Orientation",
+      "organizers": ["Student Affairs Office", "Student Union"],
+      "contact_info": {
+        "name": "Mr. John Anderson",
+        "email": "john.anderson@example.com",
+        "phone": "+1 (123) 555-7890"
+      },
+      "registration_required": true,
+      "registration_link": "https://www.exampleuniversity.edu/orientation/register",
+      "attendee_count": 1000,
+      "event_website": "https://www.exampleuniversity.edu/orientation"
+    },
+    {
+      "id": "event_6",
+      "title": "Arts & Culture Week",
+      "full_description": "Celebrate creativity and artistic expression with our Arts & Culture Week. Enjoy performances, exhibitions, and workshops.",
+      "event_time": "2023-10-05 14:00:00",
+      "img": "https://www.waseda.jp/culture/assets/uploads/2022/09/OAS02704_Fotor-1-940x705.jpg",
+      "event_location": "University Campus",
+      "category": "Arts & Culture",
+      "organizers": ["Faculty of Arts", "Student Arts Club"],
+      "contact_info": {
+        "name": "Prof. David Carter",
+        "email": "david.carter@example.com",
+        "phone": "+1 (987) 654-3210"
+      },
+      "registration_required": false,
+      "registration_link": "",
+      "attendee_count": 300,
+      "event_website": "https://www.exampleuniversity.edu/artscultureweek"
+    },
+    {
+      "id": "event_7",
+      "title": "Sports Fest 2023",
+      "full_description": "Cheer on our talented athletes and participate in various sports activities during the exciting Sports Fest 2023.",
+      "event_time": "2023-11-18 08:00:00",
+      "img": "https://i.ytimg.com/vi/r0tBeANR5fQ/maxresdefault.jpg",
+      "event_location": "University Sports Complex",
+      "category": "Sports",
+      "organizers": ["University Sports Department", "Student Sports Club"],
+      "contact_info": {
+        "name": "Mr. Robert Wilson",
+        "email": "robert.wilson@example.com",
+        "phone": "+1 (555) 789-1234"
+      },
+      "registration_required": true,
+      "registration_link": "https://www.exampleuniversity.edu/sportsfest/register",
+      "attendee_count": 600,
+      "event_website": "https://www.exampleuniversity.edu/sportsfest"
+    },
+    {
+      "id": "event_8",
+      "title": "Engineering Expo",
+      "full_description": "Explore groundbreaking engineering projects and research at our Engineering Expo. Engage with industry leaders and faculty.",
+      "event_time": "2023-09-25 12:00:00",
+      "img": "https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_600,h_400/https://coe.northeastern.edu/wp-content/uploads/news/coe/fye-expo-1.jpg",
+      "event_location": "Engineering Building, Atrium",
+      "category": "Exhibition",
+      "organizers": ["Faculty of Engineering", "Engineering Society"],
+      "contact_info": {
+        "name": "Dr. Jennifer Lee",
+        "email": "jennifer.lee@example.com",
+        "phone": "+1 (123) 555-7890"
+      },
+      "registration_required": false,
+      "registration_link": "",
+      "attendee_count": 400,
+      "event_website": "https://www.exampleuniversity.edu/engineeringexpo"
+    },
+    {
+      "id": "event_9",
+      "title": "Diversity & Inclusion Seminar",
+      "full_description": "Join us for a thought-provoking seminar on fostering diversity and inclusion in academic institutions and beyond.",
+      "event_time": "2023-10-08 15:30:00",
+      "img": "https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_600,h_400/https://coe.northeastern.edu/wp-content/uploads/news/coe/fye-expo-1.jpg",
+      "event_location": "University Conference Center",
+      "category": "Seminar",
+      "organizers": ["Office of Diversity & Inclusion"],
+      "contact_info": {
+        "name": "Dr. Amanda Williams",
+        "email": "amanda.williams@example.com",
+        "phone": "+1 (987) 654-3210"
+      },
+      "registration_required": true,
+      "registration_link": "https://www.exampleuniversity.edu/diversityseminar/register",
+      "attendee_count": 200,
+      "event_website": "https://www.exampleuniversity.edu/diversityseminar"
+    },
+    {
+      "id": "event_10",
+      "title": "Tech Summit 2023",
+      "full_description": "Explore the latest advancements in technology and digital innovation at our Tech Summit 2023. Engage with industry experts.",
+      "event_time": "2023-11-10 09:00:00",
+      "img": "https://amu.edu.pl/__data/assets/image/0019/446500/Women-in-Tech-Summit-2023.jpg",
+      "event_location": "University Tech Center",
+      "category": "Technology",
+      "organizers": ["Faculty of Technology", "Tech Society"],
+      "contact_info": {
+        "name": "Prof. Mark Roberts",
+        "email": "mark.roberts@example.com",
+        "phone": "+1 (555) 789-1234"
+      },
+      "registration_required": true,
+      "registration_link": "https://www.exampleuniversity.edu/techsummit/register",
+      "attendee_count": 700,
+      "event_website": "https://www.exampleuniversity.edu/techsummit"
+    },
+    {
+      "id": "event_11",
+      "title": "Music Concert Night",
+      "full_description": "Enjoy a spectacular night of music and performances by talented musicians and bands from our university and beyond.",
+      "event_time": "2023-09-30 19:00:00",
+      "img": "https://miro.medium.com/v2/resize:fit:1400/1*DV7DK1HsCwVdOKxY26FW4g.jpeg",
+      "event_location": "University Auditorium",
+      "category": "Music",
+      "organizers": ["Faculty of Fine Arts", "Music Club"],
+      "contact_info": {
+        "name": "Ms. Laura Taylor",
+        "email": "laura.taylor@example.com",
+        "phone": "+1 (123) 555-7890"
+      },
+      "registration_required": false,
+      "registration_link": "",
+      "attendee_count": 450,
+      "event_website": "https://www.exampleuniversity.edu/musicconcert"
+    },
+    {
+      "id": "event_12",
+      "title": "Business Conference 2023",
+      "full_description": "Join business leaders, entrepreneurs, and scholars at our Business Conference 2023 to discuss current trends and challenges.",
+      "event_time": "2023-10-14 08:30:00",
+      "img": "https://www.newham.gov.uk/images/NewhamBusinessConference2023.jpg",
+      "event_location": "University Business School, Lecture Hall",
+      "category": "Business",
+      "organizers": ["Business School", "Entrepreneurship Club"],
+      "contact_info": {
+        "name": "Prof. Richard Johnson",
+        "email": "richard.johnson@example.com",
+        "phone": "+1 (987) 654-3210"
+      },
+      "registration_required": true,
+      "registration_link": "https://www.exampleuniversity.edu/businessconference/register",
+      "attendee_count": 300,
+      "event_website": "https://www.exampleuniversity.edu/businessconference"
+    },
+    {
+      "id": "event_13",
+      "title": "Health & Wellness Expo",
+      "full_description": "Learn about physical and mental health, wellness practices, and lifestyle choices at our Health & Wellness Expo.",
+      "event_time": "2023-11-22 11:30:00",
+      "img": "https://sites.rowan.edu/rec/_images/proflink-health--wellness-2.png",
+      "event_location": "University Wellness Center",
+      "category": "Health & Wellness",
+      "organizers": ["Student Health Services", "Wellness Club"],
+      "contact_info": {
+        "name": "Dr. Susan Adams",
+        "email": "susan.adams@example.com",
+        "phone": "+1 (555) 789-1234"
+      },
+      "registration_required": false,
+      "registration_link": "",
+      "attendee_count": 400,
+      "event_website": "https://www.exampleuniversity.edu/healthwellnessexpo"
+    },
+    {
+      "id": "event_14",
+      "title": "Literary Festival",
+      "full_description": "Celebrate the written word at our Literary Festival, featuring renowned authors, book signings, and literary discussions.",
+      "event_time": "2023-09-28 15:00:00",
+      "img": "https://media.insider.in/image/upload/c_crop,g_custom/v1678201672/nmnu3pdm7hefnrov5tb4.jpg",
+      "event_location": "University Library",
+      "category": "Literary",
+      "organizers": ["Library Department", "Literary Society"],
+      "contact_info": {
+        "name": "Ms. Rachel Cooper",
+        "email": "rachel.cooper@example.com",
+        "phone": "+1 (123) 555-7890"
+      },
+      "registration_required": false,
+      "registration_link": "",
+      "attendee_count": 250,
+      "event_website": "https://www.exampleuniversity.edu/literaryfestival"
+    },
+    {
+      "id": "event_15",
+      "title": "Film Festival",
+      "full_description": "Experience the magic of cinema at our Film Festival, showcasing exceptional student and independent films.",
+      "event_time": "2023-10-03 18:00:00",
+      "img": "https://static.youthop.com/uploads/sites/2/2020/02/12th-international-inter-university-short-film-festival-2020-in-dhaka.jpg",
+      "event_location": "University Film Hall",
+      "category": "Film & Media",
+      "organizers": ["Film Studies Department", "Film Club"],
+      "contact_info": {
+        "name": "Mr. Kevin Turner",
+        "email": "kevin.turner@example.com",
+        "phone": "+1 (987) 654-3210"
+      },
+      "registration_required": false,
+      "registration_link": "",
+      "attendee_count": 300,
+      "event_website": "https://www.exampleuniversity.edu/filmfestival"
+    }
+  ]
+  
