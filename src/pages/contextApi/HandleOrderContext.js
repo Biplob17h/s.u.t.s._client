@@ -13,7 +13,7 @@ const HandleOrderContext = ({ children }) => {
 
   //   use effect
   useEffect(() => {
-    fetch(`http://localhost:8080/api/v1/order?email=${user}`)
+    fetch(`https://suts-server-sable.vercel.app/api/v1/order?email=${user}`)
       .then((res) => res.json())
       .then((data) => setOrder(data));
   }, [user, orderLength]);

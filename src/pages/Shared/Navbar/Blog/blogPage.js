@@ -12,7 +12,7 @@ const Blog = () => {
   const getAllBlogs = async () => {
     try {
       const { data } = await axios.get(
-        `http://localhost:8080/api/v1/blog/get-blog`
+        `https://suts-server-sable.vercel.app/api/v1/blog/get-blog`
       );
       setBlogs(data.blogs);
     } catch (error) {
@@ -27,11 +27,9 @@ const Blog = () => {
 
   return (
     <>
-     
-     <div
+      <div
         className="bg-cover mt-24 h-40 bg-center relative"
-        style={{ backgroundImage: `url(${bannerbg})` }}
-      >
+        style={{ backgroundImage: `url(${bannerbg})` }}>
         <div className=" flex w-full h-full items-center justify-center res-teacherdetailsbanner">
           <h1 className="text-2xl">Events</h1>
           <p className=" text-slate-500">
@@ -42,7 +40,6 @@ const Blog = () => {
           </p>
         </div>
       </div>
-     
 
       <div className="blog mt-20">
         <div className="container">
@@ -56,7 +53,7 @@ const Blog = () => {
                       className="post-img mx-auto"
                       width="1000"
                       height="530"
-                      src={`http://localhost:8080/api/v1/blog/blog-photo/${p._id}`}
+                      src={`https://suts-server-sable.vercel.app/api/v1/blog/blog-photo/${p._id}`}
                       alt="book"
                     />
                   </figure>
@@ -74,8 +71,7 @@ const Blog = () => {
                           viewBox="0 0 24 24"
                           stroke-width="1.5"
                           stroke="currentColor"
-                          class="w-6 h-6"
-                        >
+                          class="w-6 h-6">
                           <path
                             stroke-linecap="round"
                             stroke-linejoin="round"
@@ -90,8 +86,7 @@ const Blog = () => {
                           viewBox="0 0 24 24"
                           strokeWidth={1.5}
                           stroke="currentColor"
-                          className="w-6 h-6"
-                        >
+                          className="w-6 h-6">
                           <path
                             strokeLinecap="round"
                             strokeLinejoin="round"
@@ -106,8 +101,7 @@ const Blog = () => {
                           viewBox="0 0 24 24"
                           strokeWidth={1.5}
                           stroke="currentColor"
-                          className="w-6 h-6"
-                        >
+                          className="w-6 h-6">
                           <path
                             strokeLinecap="round"
                             strokeLinejoin="round"
@@ -121,20 +115,24 @@ const Blog = () => {
                         </svg>
                       </a>
                     </div>
-                    <p className="block lg:hidden opacity-70">{p.description.slice(0,200)}</p>
-                    <p className="hidden lg:block opacity-70">{p.description}</p>
+                    <p className="block lg:hidden opacity-70">
+                      {p.description.slice(0, 200)}
+                    </p>
+                    <p className="hidden lg:block opacity-70">
+                      {p.description}
+                    </p>
                   </div>
                 </div>
               ))}
             </div>
 
-                {/* side  bar */}
+            {/* side  bar */}
             <div className="col-md-3 w-full ">
               <div className="popular-post">
                 <h1 className="text-xl font-bold">Popular Posts</h1>
                 <div className="single-popular">
                   <img
-                  className="single-img"
+                    className="single-img"
                     width="100"
                     height="90"
                     src="https://i.postimg.cc/3w0L3MMG/blog-featured-13.jpg"
@@ -145,7 +143,7 @@ const Blog = () => {
 
                 <div className=" single-popular">
                   <img
-                  className="single-img"
+                    className="single-img"
                     width="100"
                     height="90"
                     src="https://i.postimg.cc/MG30ypRK/64ae8f313b73c5e2e2eb3e95.jpg"
@@ -156,7 +154,7 @@ const Blog = () => {
 
                 <div className=" single-popular">
                   <img
-                  className="single-img"
+                    className="single-img"
                     width="100"
                     height="90"
                     src="https://i.postimg.cc/tTV6Wtp2/64ae8ea83b73c5e2e2eb3e77.jpg"
@@ -164,8 +162,6 @@ const Blog = () => {
                   />
                   <div className="h3">Building on Legacy of Excellence</div>
                 </div>
-
-                
               </div>
 
               {/* <div className="user-post mt-20 border-red-400 rounded">
@@ -183,9 +179,7 @@ const Blog = () => {
                   </Link>
                 </div>
               </div> */}
-
             </div>
-
           </div>
         </div>
       </div>

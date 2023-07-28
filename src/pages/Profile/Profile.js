@@ -15,7 +15,7 @@ const Profile = () => {
   // use Effect
   useEffect(() => {
     setLoading(true);
-    fetch(`http://localhost:8080/api/v1/study?email=${user}`)
+    fetch(`https://suts-server-sable.vercel.app/api/v1/study?email=${user}`)
       .then((res) => res.json())
       .then((data) => {
         let newData = [];

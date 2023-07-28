@@ -16,10 +16,13 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post(`http://localhost:8080/api/v1/user/login`, {
-        email,
-        password,
-      });
+      const res = await axios.post(
+        `https://suts-server-sable.vercel.app/api/v1/user/login`,
+        {
+          email,
+          password,
+        }
+      );
       if (res.data.success) {
         toast.success(res.data.message);
         console.log("Done Login");

@@ -56,7 +56,9 @@ export const routes = createBrowserRouter([
         path: "/course/single/:id",
         element: <CourseSingle></CourseSingle>,
         loader: ({ params }) =>
-          fetch(`http://localhost:8080/api/v1/courses/${params.id}`),
+          fetch(
+            `https://suts-server-sable.vercel.app/api/v1/courses/${params.id}`
+          ),
       },
       {
         path: "/cart",

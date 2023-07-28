@@ -13,7 +13,7 @@ const ShopBody = () => {
 
   useEffect(() => {
     fetch(
-      `http://localhost:8080/api/v1/courses?sort=${sort}&category=${category}&gt=${lowest}&lt=${highest}&page=${page}&limit=${15}`
+      `https://suts-server-sable.vercel.app/api/v1/courses?sort=${sort}&category=${category}&gt=${lowest}&lt=${highest}&page=${page}&limit=${15}`
     )
       .then((res) => res.json())
       .then((data) => {

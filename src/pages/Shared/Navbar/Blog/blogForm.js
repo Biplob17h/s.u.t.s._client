@@ -19,7 +19,7 @@ const BlogForm = () => {
       blogData.append("description", description);
       blogData.append("photo", photo);
       const { data } = axios.post(
-        `http://localhost:8080/api/v1/blog/blog-post`,
+        `https://suts-server-sable.vercel.app/api/v1/blog/blog-post`,
         blogData
       );
       if (data?.success) {

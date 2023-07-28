@@ -29,7 +29,7 @@ const CartMainOrder = () => {
     if (confirmOrder) {
       // delete all data from cart
 
-      fetch("http://localhost:8080/api/v1/order", {
+      fetch("https://suts-server-sable.vercel.app/api/v1/order", {
         method: "DELETE",
       })
         .then((res) => res.json())
@@ -40,7 +40,7 @@ const CartMainOrder = () => {
               email: user,
               studies: order,
             };
-            fetch(`http://localhost:8080/api/v1/study`, {
+            fetch(`https://suts-server-sable.vercel.app/api/v1/study`, {
               method: "POST",
               headers: {
                 "content-type": "application/json",
@@ -54,7 +54,9 @@ const CartMainOrder = () => {
                   setOrderLength(0);
                   navegate("/confirm");
                 } else {
-                  toast.error("something went worng. Please try again leter, pro 1");
+                  toast.error(
+                    "something went worng. Please try again leter, pro 1"
+                  );
                 }
               });
           } else {

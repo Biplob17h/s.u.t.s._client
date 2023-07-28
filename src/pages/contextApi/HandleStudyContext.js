@@ -15,11 +15,10 @@ const HandleStudyContext = ({ children }) => {
 
   // all state
   const [studies, setStudies] = useState([]);
-  
 
   // all effect
   // useEffect(() => {
-  //   fetch(`http://localhost:8080/api/v1/study?email=${user}`)
+  //   fetch(`https://suts-server-sable.vercel.app/api/v1/study?email=${user}`)
   //     .then((res) => res.json())
   //     .then((data) => {
   //       data.forEach((s) => {
@@ -31,7 +30,7 @@ const HandleStudyContext = ({ children }) => {
   //       email: user,
   //       studying : studies
   //     };
-  //     fetch(`http://localhost:8080/api/v1/currentlyStudying`,{
+  //     fetch(`https://suts-server-sable.vercel.app/api/v1/currentlyStudying`,{
   //       method : "PUT",
   //       headers : {
   //         'content-type' : "application/json"
@@ -39,7 +38,7 @@ const HandleStudyContext = ({ children }) => {
   //       body : JSON.stringify()
   //     });
   // }, [user]);
-  
+
   return <StudyContext.Provider>{children}</StudyContext.Provider>;
 };
 

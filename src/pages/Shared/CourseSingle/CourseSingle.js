@@ -20,7 +20,7 @@ const CourseSingle = () => {
 
   // use Effect
   useEffect(() => {
-    fetch(`http://localhost:8080/api/v1/order?email=${user}`)
+    fetch(`https://suts-server-sable.vercel.app/api/v1/order?email=${user}`)
       .then((res) => res.json())
       .then((data) => {
         data.forEach((c) => {
@@ -33,21 +33,19 @@ const CourseSingle = () => {
       });
   });
   useEffect(() => {
-    fetch(`http://localhost:8080/api/v1/study?email=${user}`)
+    fetch(`https://suts-server-sable.vercel.app/api/v1/study?email=${user}`)
       .then((res) => res.json())
       .then((data) => {
         data.forEach((s) => {
           s?.studies.forEach((c) => {
-            if (c?.course?.name !== course?.name) {
-              setStduy(true);
-            } else {
-              setStduy(false);
+            if(c?.course?.name === course?.name){
+              setStduy(true)
             }
           });
         });
       });
   });
-
+console.log(course)
   // function
   const handleAddToCart = () => {
     // create order for database
@@ -61,7 +59,7 @@ const CourseSingle = () => {
     setOrderLength(orderLength + 1);
 
     // post to database
-    fetch("http://localhost:8080/api/v1/order", {
+    fetch("https://suts-server-sable.vercel.app/api/v1/order", {
       method: "POST",
       headers: {
         "content-type": "application/json",

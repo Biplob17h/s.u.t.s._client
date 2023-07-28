@@ -15,12 +15,15 @@ const Register = () => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        `http://localhost:8080/api/v1/user/register`,
+        `https://suts-server-sable.vercel.app/api/v1/user/register`,
         { name, email, password }
       );
       if (res.data.success) {
        console.log('register done');
        toast.success(res.data.message);
+       <form method="dialog" className="modal-backdrop">
+         <button>close</button>
+       </form>;
         navigate('/')
       } else {
         toast.error("Something went wrong");
@@ -35,7 +38,7 @@ const Register = () => {
     <>
       <dialog
         id="register"
-        className="modal  transition delay-300 duration-500">
+        className="modal transition delay-300 duration-500">
         <form
           onSubmit={handleSubmit}
           method="dialog"
@@ -74,7 +77,8 @@ const Register = () => {
           <p className="my-2 text-sm font-medium">
             Your personal data will be used to support your experience
             throughout this website, to manage access to your account, and for
-            other purposes described in our <span className="cursor-pointer font-bold">Privacy Policy</span>.
+            other purposes described in our{" "}
+            <span className="cursor-pointer font-bold">Privacy Policy</span>.
           </p>
           <button
             type="submit"
@@ -85,6 +89,7 @@ const Register = () => {
         <form method="dialog" className="modal-backdrop">
           <button>close</button>
         </form>
+        
       </dialog>
     </>
   );

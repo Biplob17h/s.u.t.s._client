@@ -20,7 +20,7 @@ const CartForSmall = ({ _id, single }) => {
 
   //   function
   const handleDelete = () => {
-    fetch(`http://localhost:8080/api/v1/order/${_id}`, {
+    fetch(`https://suts-server-sable.vercel.app/api/v1/order/${_id}`, {
       method: "DELETE",
     })
       .then((res) => res.json())
