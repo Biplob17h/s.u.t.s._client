@@ -4,6 +4,7 @@ import StarRatings from "react-star-ratings";
 import { AuthContext } from "../../contextApi/UserContext";
 import { toast } from "react-hot-toast";
 import { OrderContext } from "../../contextApi/HandleOrderContext";
+import PrivateRoutes from "../../../routes/PrivateRoutes";
 
 const CourseSingle = () => {
   // context api
@@ -38,14 +39,14 @@ const CourseSingle = () => {
       .then((data) => {
         data.forEach((s) => {
           s?.studies.forEach((c) => {
-            if(c?.course?.name === course?.name){
-              setStduy(true)
+            if (c?.course?.name === course?.name) {
+              setStduy(true);
             }
           });
         });
       });
   });
-console.log(course)
+  console.log(course);
   // function
   const handleAddToCart = () => {
     // create order for database
@@ -112,6 +113,7 @@ console.log(course)
             {course.price}&#32;$
           </h1>
           <h1 className="text-xl mt-3">{course.description}</h1>
+
           {bought ? (
             <>
               <h1 className="mt-20 text-[18px] font-semibold cusOpenSans text-white text-center pt-3 cursor-no-drop  h-[50px] w-[190px] bg-[#434343]">

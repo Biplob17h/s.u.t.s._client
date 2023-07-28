@@ -187,14 +187,10 @@ const Navbar = () => {
               ) : (
                 <>
                   <li>
-                    <Link>
-                      Register
-                    </Link>
+                    <Link to="/register">Register</Link>
                   </li>
                   <li>
-                    <Link>
-                      Login
-                    </Link>
+                    <Link to="/login">Login</Link>
                   </li>
                 </>
               )}
@@ -219,24 +215,39 @@ const Navbar = () => {
         {/* this for big device */}
         <div className=" hidden md:flex">
           <Link
-            onClick={handleNav}
+            onClick={handleNavScroll}
             to="/"
             className="btn btn-ghost hover:text-[#0693e3]">
             Home
           </Link>
-          <Link to="/shop" className="btn btn-ghost hover:text-[#0693e3]">
+          <Link
+            onClick={handleNavScroll}
+            to="/shop"
+            className="btn btn-ghost hover:text-[#0693e3]">
             Courses
           </Link>
-          <Link className="btn btn-ghost hover:text-[#0693e3]" to="/events">
+          <Link
+            onClick={handleNavScroll}
+            className="btn btn-ghost hover:text-[#0693e3]"
+            to="/events">
             Events
           </Link>
-          <Link to="/blog" className="btn btn-ghost hover:text-[#0693e3]">
+          <Link
+            onClick={handleNavScroll}
+            to="/blog"
+            className="btn btn-ghost hover:text-[#0693e3]">
             Blog
           </Link>
-          <Link to="/about" className="btn btn-ghost hover:text-[#0693e3]">
+          <Link
+            onClick={handleNavScroll}
+            to="/about"
+            className="btn btn-ghost hover:text-[#0693e3]">
             About Us
           </Link>
-          <Link to="/news" className="btn btn-ghost hover:text-[#0693e3]">
+          <Link
+            onClick={handleNavScroll}
+            to="/news"
+            className="btn btn-ghost hover:text-[#0693e3]">
             News
           </Link>
           {user ? (
@@ -306,17 +317,18 @@ const Navbar = () => {
           ) : (
             <>
               <Link
-              to='/register'
+                onClick={handleNavScroll}
+                to="/register"
                 className=" btn btn-ghost hover:text-[#0693e3]">
                 Register
               </Link>
-              
+
               <Link
-              to='/login'
+                onClick={handleNavScroll}
+                to="/login"
                 className="btn btn-ghost hover:text-[#0693e3]">
                 Login
               </Link>
-              
             </>
           )}
         </div>

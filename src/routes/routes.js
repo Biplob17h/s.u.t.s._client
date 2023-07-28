@@ -16,6 +16,7 @@ import Profile from "../pages/Profile/Profile";
 import TeacherSingle from "../pages/About/TeacherDetails/TeacherSingle";
 import Register from "../pages/Authentication/Register/Register";
 import Login from "../pages/Authentication/Login/Login";
+import PrivateRoutes from "./PrivateRoutes";
 
 export const routes = createBrowserRouter([
   {
@@ -56,15 +57,19 @@ export const routes = createBrowserRouter([
       },
       {
         path: "/register",
-        element: <Register></Register>
+        element: <Register></Register>,
       },
       {
         path: "/login",
-        element: <Login></Login>
+        element: <Login></Login>,
       },
       {
         path: "/course/single/:id",
-        element: <CourseSingle></CourseSingle>,
+        element: (
+          <PrivateRoutes>
+            <CourseSingle></CourseSingle>
+          </PrivateRoutes>
+        ),
         loader: ({ params }) =>
           fetch(
             `https://suts-server-sable.vercel.app/api/v1/courses/${params.id}`
