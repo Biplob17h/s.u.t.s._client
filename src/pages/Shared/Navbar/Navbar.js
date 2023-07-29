@@ -17,6 +17,7 @@ const Navbar = () => {
   // all state
   const [top, setTop] = useState(true);
   const [nav, setNav] = useState(0);
+  const [hidden, setHidden] = useState(true);
 
   // use Effect
   useEffect(() => {
@@ -52,6 +53,11 @@ const Navbar = () => {
     console.log(orr);
   };
 
+  // handle hidden
+  const handleHidden = () => {
+    setHidden(!hidden);
+  };
+
   // on click logout
   const handleLogOut = () => {
     localStorage.setItem("email", "");
@@ -75,6 +81,7 @@ const Navbar = () => {
   // count total
 
   const subTotal = countSubTotal(order);
+  console.log(hidden);
 
   return (
     <div
@@ -86,6 +93,7 @@ const Navbar = () => {
         <div className="flex opacity-100 md:hidden z-10">
           <div className="dropdown">
             <label
+              onClick={handleHidden}
               tabIndex={0}
               className="btn btn-ghost btn-circle opacity-100">
               <svg
@@ -102,108 +110,111 @@ const Navbar = () => {
                 />
               </svg>
             </label>
-            <ul
-              tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1]  p-2 shadow bg-base-100 rounded-box w-52">
-              {user ? (
-                <>
-                  <li className="flex flex-row justify-between">
-                    {/* cart for small  device*/}
-                    <Link to="/cart">
-                      <button className="btn">
-                        <div className="dropdown dropdown-end">
-                          <label
-                            tabIndex={0}
-                            className="btn btn-ghost btn-circle">
-                            <div className="indicator">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                className="h-5 w-5"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path
-                                  strokeLinecap="round"
-                                  strokeLinejoin="round"
-                                  strokeWidth="2"
-                                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
-                                />
-                              </svg>
-                              <span className="badge badge-sm indicator-item">
-                                {order?.length}
-                              </span>
-                            </div>
-                          </label>
-                        </div>
-                      </button>
-                    </Link>
-                    {/* profile for small  device*/}
-                    <Link to="/profile/main" className="btn">
-                      <label
-                        tabIndex={0}
-                        className="btn btn-ghost btn-circle avatar">
-                        <div className="w-10 rounded-full">
-                          <img src={profileImg} alt="" />
-                        </div>
-                      </label>
-                    </Link>
-                  </li>
-                </>
-              ) : (
-                <></>
-              )}
-              <li>
-                <Link onClick={handleNavScroll} to="/">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link onClick={handleNavScroll} to="/shop">
-                  Courses
-                </Link>
-              </li>
-              <li>
-                <Link onClick={handleNavScroll} to="/events">
-                  Events
-                </Link>
-              </li>
-              <li>
-                <Link onClick={handleNavScroll} to="/blog">
-                  Blog
-                </Link>
-              </li>
-              <li>
-                <Link onClick={handleNavScroll} to="/about">
-                  About Us
-                </Link>
-              </li>
-              <li>
-                <Link onClick={handleNavScroll} to="/news">
-                  News
-                </Link>
-              </li>
-              {user ? (
-                <></>
-              ) : (
-                <>
-                  <li>
-                    <Link to="/register">Register</Link>
-                  </li>
-                  <li>
-                    <Link to="/login">Login</Link>
-                  </li>
-                </>
-              )}
-              {user ? (
-                <>
-                  <li>
-                    <Link onClick={handleLogOut}>Logout</Link>
-                  </li>
-                </>
-              ) : (
-                <></>
-              )}
-            </ul>
+            {/* small div parant div */}
+            <div className={`${hidden ? "hidden" : "block"}`}>
+              <ul
+                tabIndex={0}
+                className="menu menu-sm dropdown-content mt-3 z-[1]  p-2 shadow bg-base-100 rounded-box w-52">
+                {user ? (
+                  <>
+                    <li className="flex flex-row justify-between">
+                      {/* cart for small  device*/}
+                      <Link to="/cart">
+                        <button className="btn">
+                          <div className="dropdown dropdown-end">
+                            <label
+                              tabIndex={0}
+                              className="btn btn-ghost btn-circle">
+                              <div className="indicator">
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  className="h-5 w-5"
+                                  fill="none"
+                                  viewBox="0 0 24 24"
+                                  stroke="currentColor">
+                                  <path
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
+                                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                                  />
+                                </svg>
+                                <span className="badge badge-sm indicator-item">
+                                  {order?.length}
+                                </span>
+                              </div>
+                            </label>
+                          </div>
+                        </button>
+                      </Link>
+                      {/* profile for small  device*/}
+                      <Link to="/profile/main" className="btn">
+                        <label
+                          tabIndex={0}
+                          className="btn btn-ghost btn-circle avatar">
+                          <div className="w-10 rounded-full">
+                            <img src={profileImg} alt="" />
+                          </div>
+                        </label>
+                      </Link>
+                    </li>
+                  </>
+                ) : (
+                  <></>
+                )}
+                <li>
+                  <Link onClick={handleNavScroll} to="/">
+                    Home
+                  </Link>
+                </li>
+                <li>
+                  <Link onClick={handleNavScroll} to="/shop">
+                    Courses
+                  </Link>
+                </li>
+                <li>
+                  <Link onClick={handleNavScroll} to="/events">
+                    Events
+                  </Link>
+                </li>
+                <li>
+                  <Link onClick={handleNavScroll} to="/blog">
+                    Blog
+                  </Link>
+                </li>
+                <li>
+                  <Link onClick={handleNavScroll} to="/about">
+                    About Us
+                  </Link>
+                </li>
+                <li>
+                  <Link onClick={handleNavScroll} to="/news">
+                    News
+                  </Link>
+                </li>
+                {user ? (
+                  <></>
+                ) : (
+                  <>
+                    <li>
+                      <Link to="/register">Register</Link>
+                    </li>
+                    <li>
+                      <Link to="/login">Login</Link>
+                    </li>
+                  </>
+                )}
+                {user ? (
+                  <>
+                    <li>
+                      <Link onClick={handleLogOut}>Logout</Link>
+                    </li>
+                  </>
+                ) : (
+                  <></>
+                )}
+              </ul>
+            </div>
           </div>
         </div>
         {/* for both  device*/}
